@@ -12,12 +12,7 @@ const MobileMenu: React.FC = () => {
         <div className="mobile_in">
           <div className="logo">
             <a href="#">
-              <Image
-                width={1000}
-                height={1000}
-                src="/img/logo/logo.png"
-                alt=""
-              />
+              <Image width={159} height={48} src="/img/logo/logo.png" alt="" />
             </a>
           </div>
           <div

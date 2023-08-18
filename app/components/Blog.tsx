@@ -16,7 +16,7 @@ const blogData: BlogDataItem[] = [
   {
     title: "Diversification of digital marketing stategies",
     date: "02 June, 2022",
-    author: "John Smith",
+    author: "Jay Maniya",
     img: "/img/news/1.jpg",
     description: [
       "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
@@ -27,7 +27,7 @@ const blogData: BlogDataItem[] = [
   {
     title: "Diversification of digital marketing stategies",
     date: "02 June, 2022",
-    author: "John Smith",
+    author: "Jay Maniya",
     img: "/img/news/2.jpg",
     description: [
       "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
@@ -38,7 +38,7 @@ const blogData: BlogDataItem[] = [
   {
     title: "Diversification of digital marketing stategies",
     date: "02 June, 2022",
-    author: "John Smith",
+    author: "Jay Maniya",
     img: "/img/news/3.jpg",
     description: [
       "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
@@ -49,7 +49,7 @@ const blogData: BlogDataItem[] = [
   {
     title: "Diversification of digital marketing stategies",
     date: "02 June, 2022",
-    author: "John Smith",
+    author: "Jay Maniya",
     img: "/img/news/4.jpg",
     description: [
       "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
@@ -127,8 +127,8 @@ const Blog: React.FC = () => {
                           >
                             Read More{" "}
                             <Image
-                              width={1000}
-                              height={1000}
+                              width={24}
+                              height={24}
                               className="svg"
                               src="/img/svg/top-arrow.svg"
                               alt=""
@@ -142,6 +142,7 @@ const Blog: React.FC = () => {
                           height={1000}
                           src="/img/thumbs/24-20.jpg"
                           alt=""
+                          style={{ width: 260, height: 100 }}
                         />
                         <div
                           className="main"
@@ -155,8 +156,8 @@ const Blog: React.FC = () => {
                       </div>
                       <span className="shape">
                         <Image
-                          width={1000}
-                          height={1000}
+                          width={232}
+                          height={110}
                           className="svg"
                           src="/img/svg/Intersect.svg"
                           alt=""

@@ -21,8 +21,8 @@ const Feedback: React.FC<FeedbackProps> = ({ dark }) => {
           </div>
           <div className="testimonials_in">
             <Image
-              width={1000}
-              height={1000}
+              width={302}
+              height={347}
               src={`/img/testimonials/${dark ? 2 : 1}.jpg`}
               alt=""
             />

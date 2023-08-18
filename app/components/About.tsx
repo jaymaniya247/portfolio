@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const About: React.FC = () => {
@@ -7,14 +8,20 @@ const About: React.FC = () => {
         <div className="about_in">
           <div className="left">
             <div className="box">
-              <h3 className="year">10</h3>
-              <span className="experience">Years of Experience</span>
-              <h3 className="name">John Smith</h3>
+              <h3 className="year">1</h3>
+              <span className="experience">Year of Experience</span>
+              <h3 className="name">Jay Maniya</h3>
             </div>
           </div>
           <div className="right">
             <span className="element">
-              <img className="svg" src="/img/svg/element.svg" alt="" />
+              <Image
+                width={1000}
+                height={1000}
+                className="svg"
+                src="/img/svg/element.svg"
+                alt=""
+              />
             </span>
             <div className="orido_tm_main_title">
               <h3>
@@ -23,9 +30,9 @@ const About: React.FC = () => {
             </div>
             <div className="text">
               <p>
-                With 10 years experience as a professional Web developer, I have
+                With a Year experience as a professional Web developer, I have
                 acquired the skills and knowledge necessary to make your project
-                a success. I enjoy every step of the design process, from
+                a success. I enjoy every step of the development process, from
                 discussion and collaboration.
               </p>
             </div>
@@ -33,10 +40,16 @@ const About: React.FC = () => {
               <div className="orido_tm_boxed_button">
                 <a href="/img/cv/1.jpg" download>
                   Download CV{" "}
-                  <img className="svg" src="/img/svg/paper.svg" alt="" />
+                  <Image
+                    width={192}
+                    height={75}
+                    className="svg"
+                    src="/img/svg/paper.svg"
+                    alt=""
+                  />
                 </a>
               </div>
-              <img src="/img/signature.png" alt="" />
+              <Image width={192} height={75} src="/img/signature.png" alt="" />
             </div>
           </div>
         </div>

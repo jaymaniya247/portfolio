@@ -12,8 +12,8 @@ const Header: React.FC<HeaderProps> = ({ dark }) => {
         <div className="logo">
           <a href="#">
             <Image
-              width={1000}
-              height={1000}
+              width={159}
+              height={48}
               src={`/img/logo/${dark ? "light" : "logo"}.png`}
               alt=""
             />
@@ -41,15 +41,6 @@ const Header: React.FC<HeaderProps> = ({ dark }) => {
             </li>
           </ul>
           <span className="ccc" />
-        </div>
-        <div className="button">
-          <a
-            href="https://themeforest.net/user/codeefly/portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Purchase Now
-          </a>
         </div>
       </div>
     </div>

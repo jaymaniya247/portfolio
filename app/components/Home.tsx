@@ -13,7 +13,7 @@ const Home: React.FC<HomeProps> = ({ dark }) => {
           <div className="details">
             <div className="short">
               <h3>
-                John Smith{" "}
+                Jay Maniya{" "}
                 <Image
                   width={1000}
                   height={1000}
@@ -22,12 +22,12 @@ const Home: React.FC<HomeProps> = ({ dark }) => {
                   alt=""
                 />
               </h3>
-              <span className="job">Visual Designer</span>
+              <span className="job">MERN Stack Developer</span>
             </div>
             <div className="text">
               <p>
-                I&apos;m a creative designer based in New York, and I&apos;m
-                very passionate and dedicated to my work.
+                I&apos;m a creative Developer based in India, and I&apos;m very
+                passionate and dedicated to my work.
               </p>
             </div>
             <div className="buttons">
@@ -111,18 +111,18 @@ const Home: React.FC<HomeProps> = ({ dark }) => {
       <div className="avatar">
         <div className="img">
           <Image
-            width={1000}
-            height={1000}
+            width={693}
+            height={779}
             src={`/img/hero/${dark ? 2 : 1}.jpg`}
             alt=""
           />
-          <div className="video_button">
+          {/* <div className="video_button">
             <a
               className="popup-youtube"
               href="https://www.youtube.com/watch?v=7e90gBu4pas"
             >
               <Image
-                width={1000}
+                width={200}
                 height={1000}
                 className="anim_circle"
                 src="/img/hero/welcome.png"
@@ -136,7 +136,7 @@ const Home: React.FC<HomeProps> = ({ dark }) => {
                 alt=""
               />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

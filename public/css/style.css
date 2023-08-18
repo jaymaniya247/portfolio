@@ -996,10 +996,10 @@ h6 {
 }
 .orido_tm_informations .right .content .wrapper.current {
   display: block;
-  -webkit-animation: slide-down 1s ease;
-  -moz-animation: slide-down 1s ease;
+  animation: slide-down 1s ease;
 }
-@-webkit-keyframes slide-down {
+
+@keyframes slide-down {
   0% {
     -webkit-transform: translateX(10%);
   }
@@ -1007,14 +1007,16 @@ h6 {
     -webkit-transform: translateX(0);
   }
 }
-@-moz-keyframes slide-down {
+
+/* @-moz-keyframes slide-down {
   0% {
     -moz-transform: translateX(10%);
   }
   100% {
     -moz-transform: translateX(0);
   }
-}
+} */
+
 .orido_tm_informations .skillbox {
   width: 100%;
   float: left;

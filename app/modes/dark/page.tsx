@@ -1,7 +1,7 @@
-import React from "react";
+import DarkClient from "./DarkClient";
 
 const DarkLayout = () => {
-  return <div>DarkLayout</div>;
+  return <DarkClient />;
 };
 
 export default DarkLayout;

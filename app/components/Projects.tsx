@@ -38,8 +38,8 @@ const Projects: React.FC = () => {
                   <div className="list_inner">
                     <div className="image">
                       <Image
-                        width={1000}
-                        height={1000}
+                        width={370}
+                        height={400}
                         src="/img/thumbs/37-40.jpg"
                         alt=""
                       />
@@ -61,13 +61,114 @@ const Projects: React.FC = () => {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                  {/* ... Other SwiperSlide elements ... */}
+                  <div className="list_inner">
+                    <div className="image">
+                      <Image
+                        width={370}
+                        height={400}
+                        src="/img/thumbs/37-40.jpg"
+                        alt=""
+                      />
+                      <div
+                        className="main"
+                        data-img-url="/img/portfolio/2.jpg"
+                      />
+                    </div>
+                    <div className="details">
+                      <span className="category">Vimeo</span>
+                      <h3 className="title">
+                        <span>Food delivery</span>
+                      </h3>
+                    </div>
+                    <a
+                      className="orido_tm_full_link popup-vimeo"
+                      href="https://vimeo.com/337293658"
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="list_inner">
+                    <div className="image">
+                      <Image
+                        width={370}
+                        height={400}
+                        src="/img/thumbs/37-40.jpg"
+                        alt=""
+                      />
+                      <div
+                        className="main"
+                        data-img-url="/img/portfolio/3.jpg"
+                      />
+                    </div>
+                    <div className="details">
+                      <span className="category">Soundcloud</span>
+                      <h3 className="title">
+                        <span>Ecommerce Website</span>
+                      </h3>
+                    </div>
+                    <a
+                      className="orido_tm_full_link soundcloude_link mfp-iframe audio"
+                      href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="list_inner">
+                    <div className="image">
+                      <Image
+                        width={370}
+                        height={400}
+                        src="/img/thumbs/37-40.jpg"
+                        alt=""
+                      />
+                      <div
+                        className="main"
+                        data-img-url="/img/portfolio/4.jpg"
+                      />
+                    </div>
+                    <div className="details">
+                      <span className="category">Details</span>
+                      <h3 className="title">
+                        <span>Mockup Phone</span>
+                      </h3>
+                    </div>
+                    <a
+                      className="orido_tm_full_link details_link c-pointer"
+                      onClick={() => setDetailsPopup(true)}
+                    />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="list_inner">
+                    <div className="image">
+                      <Image
+                        width={370}
+                        height={400}
+                        src="/img/thumbs/37-40.jpg"
+                        alt=""
+                      />
+                      <div
+                        className="main"
+                        data-img-url="/img/portfolio/5.jpg"
+                      />
+                    </div>
+                    <div className="details">
+                      <span className="category">Popup</span>
+                      <h3 className="title">
+                        <span>Felix Photo</span>
+                      </h3>
+                    </div>
+                    <a
+                      className="orido_tm_full_link zoom"
+                      href="img/portfolio/5.jpg"
+                    />
+                  </div>
                 </SwiperSlide>
               </Swiper>
               <a className="prev_button" href="#">
                 <Image
-                  width={1000}
-                  height={1000}
+                  width={370}
+                  height={400}
                   className="svg"
                   src="/img/svg/prev.svg"
                   alt=""
@@ -75,8 +176,8 @@ const Projects: React.FC = () => {
               </a>
               <a className="next_button" href="#">
                 <Image
-                  width={1000}
-                  height={1000}
+                  width={370}
+                  height={400}
                   className="svg"
                   src="/img/svg/next.svg"
                   alt=""

@@ -42,7 +42,7 @@ const Partners: React.FC<PartnersProps> = ({ dark }) => {
               {partnersLogo[dark ? "dark" : "light"].map((logo, i) => (
                 <SwiperSlide className="item" key={i}>
                   <a href="#">
-                    <Image width={1000} height={1000} src={logo} alt="" />
+                    <Image width={232} height={110} src={logo} alt="" />
                   </a>
                 </SwiperSlide>
               ))}

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { Fragment, useEffect, useState } from "react";
@@ -88,8 +89,9 @@ const educations: Education[] = [
 const ExpertAreas: React.FC = () => {
   const [activeTab, setActiveTab] = useState<number>(1);
 
-  const activeContentTab = (value: number): string =>
-    activeTab === value ? "current" : "";
+  const activeContentTab = (value: number): string => {
+    return activeTab === value ? "current" : "";
+  };
 
   useEffect(() => {
     filter_hashtag();
@@ -126,10 +128,11 @@ const ExpertAreas: React.FC = () => {
                 </div>
                 <div className="orido_tm_boxed_button">
                   <a href="#">
+                    {/* download resume here  */}
                     My Resume{" "}
                     <Image
-                      width={1000}
-                      height={1000}
+                      width={100}
+                      height={100}
                       className="svg"
                       src="/img/svg/paper.svg"
                       alt=""
@@ -147,9 +150,7 @@ const ExpertAreas: React.FC = () => {
                         data-tab="tab_1"
                       >
                         <span>Skills</span>{" "}
-                        <Image
-                          width={1000}
-                          height={1000}
+                        <img
                           className="svg"
                           src="/img/svg/top-arrow.svg"
                           alt=""
@@ -163,9 +164,7 @@ const ExpertAreas: React.FC = () => {
                         data-tab="tab_2"
                       >
                         <span>Experience</span>{" "}
-                        <Image
-                          width={1000}
-                          height={1000}
+                        <img
                           className="svg"
                           src="/img/svg/top-arrow.svg"
                           alt=""
@@ -179,9 +178,7 @@ const ExpertAreas: React.FC = () => {
                         data-tab="tab_3"
                       >
                         <span>Education</span>{" "}
-                        <Image
-                          width={1000}
-                          height={1000}
+                        <img
                           className="svg"
                           src="/img/svg/top-arrow.svg"
                           alt=""
@@ -201,8 +198,8 @@ const ExpertAreas: React.FC = () => {
                               <span className="icon">
                                 <span className="in">
                                   <Image
-                                    width={1000}
-                                    height={1000}
+                                    width={24}
+                                    height={24}
                                     className="svg"
                                     src={skill.icon}
                                     alt=""
@@ -295,4 +292,5 @@ const ExpertAreas: React.FC = () => {
     </Fragment>
   );
 };
+
 export default ExpertAreas;
