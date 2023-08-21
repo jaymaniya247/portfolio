@@ -1,5 +1,6 @@
 import React from "react";
 import Popup from "./Popup";
+import Image from "next/image";
 
 interface ServicePopupProps {
   data: {
@@ -16,7 +17,7 @@ const ServicePopup: React.FC<ServicePopupProps> = ({ data, open, close }) => {
     <Popup open={open} close={close}>
       <div className="service_popup_informations">
         <div className="image">
-          <img src="/img/thumbs/4-2.jpg" alt="" />
+          <Image width={1000} height={400} src="/img/thumbs/4-2.jpg" alt="" />
           <div
             className="main"
             data-img-url={data.img}

@@ -8,7 +8,7 @@ import {
   imgToSVG,
   scrollSection,
   stickyNav,
-} from "../utilits";
+} from "@/app/utils/utils";
 import PreLoader from "./PreLoader";
 
 interface LayoutProps {
@@ -34,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <title>Orido | Home</title>
       </Head>
       <PreLoader />
-      <Image width={1000} height={1000} View />
+      <ImageView />
       <VideoPopup />
       <div className="orido_tm_all_wrap" data-magic-cursor="show">
         {children}
