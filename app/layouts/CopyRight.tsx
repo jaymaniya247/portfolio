@@ -8,7 +8,7 @@ const CopyRight: React.FC = () => {
         <div className="container">
           <div className="copyright_inner">
             <div className="logo">
-              <Image width={159} height={49} src="/img/logo/logo.png" alt="" />
+              {/* <Image width={159} height={49} src="/img/logo/logo.png" alt="" /> */}
             </div>
             <div className="copy">
               <p>

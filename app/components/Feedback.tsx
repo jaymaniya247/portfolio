@@ -20,26 +20,27 @@ const Feedback: React.FC<FeedbackProps> = ({ dark }) => {
             </h3>
           </div>
           <div className="testimonials_in">
-            <Image
+            {/* <Image
               width={302}
               height={347}
               src={`/img/testimonials/${dark ? 2 : 1}.jpg`}
               alt=""
-            />
+            /> */}
             <div className="info">
               <div className="text">
                 <p>
-                  “Awesome website! Easy to use and edit, it has a lot of
-                  options to design whatever you need, it is professional and
-                  fun. I was very successful creating my profile using designer
-                  which gave me unbelievable reach &amp; appreciation.”
+                  “Jay&apos;s expertise in MERN stack development brought our
+                  project to life. His seamless integration of MongoDB,
+                  Express.js, React, and Node.js resulted in a user-friendly,
+                  efficient website. His dedication, timely delivery, and
+                  problem-solving skills truly impressed us.”
                 </p>
               </div>
               <div className="details">
                 <h3 className="name">
-                  <span>Albert Walkers</span>
+                  <span>Vijay Lathiya</span>
                 </h3>
-                <span className="job">Vivaco Group</span>
+                <span className="job">Lathiya Solutions</span>
               </div>
             </div>
           </div>

@@ -13,39 +13,39 @@ interface Service {
 
 const serviceData: Service[] = [
   {
-    name: "UI/UX Design",
-    img: "/img/service/1.jpg",
+    name: "Full-Stack Development",
+    img: "/img/service/mern.jpg",
     description: [
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "As a MERN stack developer, I specialize in creating end-to-end web applications that seamlessly integrate MongoDB, Express.js, React, and Node.js.",
+      "From crafting robust backends to designing interactive frontends, I bring your ideas to life with efficient code and user-centric design.",
+      "Whether you need a dynamic e-commerce platform, a data-driven dashboard, or a modern web app, I'm here to develop solutions that drive your business forward.",
     ],
   },
   {
-    name: "User Research",
-    img: "/img/service/2.jpg",
+    name: "API Development",
+    img: "/img/service/api.jpg",
     description: [
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "Empower your digital presence with my expertise in designing and building APIs using Node.js and Express.js.",
+      "I excel in creating RESTful APIs that enable seamless communication between different components of your application.",
+      "With a strong focus on efficiency and security, I ensure your application's backend operates smoothly, enabling data flow and functionality.",
     ],
   },
   {
-    name: "UI Animation",
-    img: "/img/service/3.jpg",
+    name: "Frontend Development",
+    img: "/img/service/frontend.jpg",
     description: [
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "Crafting captivating user experiences is my forte. Using React, I design and develop interactive, responsive frontends that engage and delight users.",
+      "Whether it's a dynamic single-page application or a feature-rich user interface, I bring together creativity and functionality to enhance user engagement.",
+      "Let's collaborate to transform your vision into a user-friendly, visually appealing frontend that sets your application apart.",
     ],
   },
   {
-    name: "Product Design",
-    img: "/img/service/4.jpg",
+    name: "Database Management",
+    img: "/img/service/Database.png",
     description: [
-      "Orido is a leading web design agency with an award-winning design team that creates innovative, effective websites that capture your brand, improve your conversion rates, and maximize your revenue to help grow your business and achieve your goals.",
-      "In today’s digital world, your website is the first interaction consumers have with your business. That's why almost 95 percent of a user’s first impression relates to web design. It’s also why web design services can have an immense impact on your company’s bottom line.",
-      "That’s why more companies are not only reevaluating their website’s design but also partnering with Orido, the web design agency that’s driven more than $2.4 billion in revenue for its clients. With over 50 web design awards under our belt, we're confident we can design a custom website that drives sales for your unique business.",
+      "A solid foundation is crucial for every application. I specialize in leveraging MongoDB to design efficient and scalable database architectures.",
+      "From data modeling to implementation, I ensure your application's data management is optimized for performance and reliability.",
+      "Partner with me to build a secure, well-structured database that supports your application's growth and functionality.",
     ],
   },
 ];

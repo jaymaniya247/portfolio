@@ -29,8 +29,8 @@ const LightLayout = () => {
       <Services />
       <Projects />
       <Feedback />
-      <Blog />
-      <Partners />
+      {/* <Blog /> */}
+      {/* <Partners /> */}
       <Contact />
       <CopyRight />
       <Mouse />

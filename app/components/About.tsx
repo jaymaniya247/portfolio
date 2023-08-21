@@ -38,7 +38,7 @@ const About: React.FC = () => {
             </div>
             <div className="short">
               <div className="orido_tm_boxed_button">
-                <a href="/img/cv/1.jpg" download>
+                <a href="/img/cv/jay-maniya.pdf" download>
                   Download CV{" "}
                   <Image
                     width={192}
@@ -49,7 +49,7 @@ const About: React.FC = () => {
                   />
                 </a>
               </div>
-              <Image width={192} height={75} src="/img/signature.png" alt="" />
+              {/* <Image width={192} height={75} src="/img/signature.png" alt="" /> */}
             </div>
           </div>
         </div>

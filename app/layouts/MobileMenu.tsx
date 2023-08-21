@@ -10,11 +10,11 @@ const MobileMenu: React.FC = () => {
     <div className="orido_tm_mobile_menu">
       <div className="mobile_menu_inner">
         <div className="mobile_in">
-          <div className="logo">
+          {/* <div className="logo">
             <a href="#">
               <Image width={159} height={48} src="/img/logo/logo.png" alt="" />
             </a>
-          </div>
+          </div> */}
           <div
             className={`trigger`}
             onClick={() => setToggle(!toggle)}

@@ -32,7 +32,7 @@ const Home: React.FC<HomeProps> = ({ dark }) => {
             </div>
             <div className="buttons">
               <div className="orido_tm_boxed_button">
-                <a className="anchor" href="#contact">
+                <a className="anchor" href="mailto:jaymaniya247@gmail.com">
                   Say Hello{" "}
                   <Image
                     width={1000}
@@ -59,31 +59,37 @@ const Home: React.FC<HomeProps> = ({ dark }) => {
           </div>
         </div>
         <div className="orido_tm_follow">
-          <span>Follow me:</span>
+          <span>Socials:</span>
           <ul>
             <li>
-              <a href="#">
+              <a
+                href="https://github.com/jaymaniya247/jaymaniya247"
+                target="_blank"
+              >
                 <Image
                   width={1000}
                   height={1000}
                   className="svg"
-                  src="/img/svg/social/be.svg"
+                  src="/img/svg/github.svg"
                   alt=""
                 />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a
+                href="https://www.linkedin.com/in/jay-maniya-8a9913206/"
+                target="_blank"
+              >
                 <Image
                   width={1000}
                   height={1000}
                   className="svg"
-                  src="/img/svg/social/dribbble.svg"
+                  src="/img/svg/linkedin.svg"
                   alt=""
                 />
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="#">
                 <Image
                   width={1000}
@@ -93,7 +99,7 @@ const Home: React.FC<HomeProps> = ({ dark }) => {
                   alt=""
                 />
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
@@ -113,7 +119,7 @@ const Home: React.FC<HomeProps> = ({ dark }) => {
           <Image
             width={693}
             height={779}
-            src={`/img/hero/${dark ? 2 : 1}.jpg`}
+            src={`/img/personal-photo/image-${dark ? "dark" : "light"}.png`}
             alt=""
           />
           {/* <div className="video_button">

@@ -25,64 +25,40 @@ interface Education {
 }
 
 const counts = [
-  { name: "Trainings", value: 219 },
-  { name: "Written Book", value: 48 },
-  { name: "Listeners", value: 527 },
-  { name: "Own Projects", value: 12 },
+  { name: "Trainings", value: 10 },
+  // { name: "Written Book", value: 48 },
+  { name: "Running Projects", value: 2 },
+  { name: "Own Projects", value: 6 },
 ];
 
 const skills: Skill[] = [
-  { name: "Figma", value: 90, icon: "/img/svg/figma.svg" },
-  { name: "After Effect", value: "80", icon: "/img/svg/Ae.svg" },
-  { name: "Photoshop", value: "85", icon: "/img/svg/photoshop.svg" },
-  { name: "XD", value: "95", icon: "/img/svg/Xd.svg" },
-  { name: "Illustrator", value: "90", icon: "/img/svg/illustrator.svg" },
-  { name: "Indesign", value: "75", icon: "/img/svg/Id.svg" },
+  { name: "Reactjs", value: "90", icon: "/img/svg/react.svg" },
+  { name: "Nextjs", value: "90", icon: "/img/svg/nextjs.svg" },
+  { name: "Nodejs", value: "90", icon: "/img/svg/node.svg" },
+  { name: "Expressjs", value: "95", icon: "/img/svg/express.svg" },
+  { name: "Mongodb", value: "85", icon: "/img/svg/mongodb.svg" },
+  { name: "Git", value: "85", icon: "/img/svg/git.svg" },
+  { name: "Github", value: "95", icon: "/img/svg/github.svg" },
 ];
 
 const experiences: Experience[] = [
   {
-    company: "Bauen Software Inc.",
-    designation: "Product Designer",
-    time: "2021 - Present",
-  },
-  {
-    company: "Bauen Software Inc.",
-    designation: "UX Designer",
-    time: "2020 - 2021",
-  },
-  {
-    company: "Bauen Software Inc.",
-    designation: "UI Designer",
-    time: "2018 - 2020",
-  },
-  {
-    company: "Bauen Software Inc.",
-    designation: "Web Designer",
-    time: "2016 - 2018",
+    company: "Lathiya Solutions",
+    designation: "Full Stack Developer (MERN + PHP)",
+    time: "2022 - Present",
   },
 ];
 
 const educations: Education[] = [
   {
-    institution: "Stanford Univercity",
-    certificate: "Web Design Course",
-    time: "2021 - Present",
+    institution: "Jain Deemed To Be University",
+    certificate: "Master of Computer Application",
+    time: "2023 - Present",
   },
   {
-    institution: "Art Univercity of New York",
-    certificate: "Art Director Course",
-    time: "2020 - 2021",
-  },
-  {
-    institution: "Amazon College",
-    certificate: "IOS Development",
-    time: "2018 - 2020",
-  },
-  {
-    institution: "Univercity of Texas",
-    certificate: "UX Expert",
-    time: "2017 - 2018",
+    institution: "Veer Narmad South Gujarat University",
+    certificate: "Bachelor of Computer Applications",
+    time: "2020 - 2023",
   },
 ];
 
@@ -115,20 +91,17 @@ const ExpertAreas: React.FC = () => {
                 </div>
                 <div className="text">
                   <p>
-                    You can express yourself however you want and whenever you
-                    want, for free. You can customize a template or make your
-                    own from scratch, with an immersive library at your
-                    disposal. You can express yourself however you want and
-                    whenever you free.
+                    Greetings! I&apos;m Jay Maniya, an Indian MERN stack
+                    developer. While I excel in MERN, I thrive on embracing
+                    challenges to fuel my growth. Collaboration is my
+                    cornerstone; I enjoy crafting seamless solutions through
+                    teamwork. Beyond coding, I explore tech trends and seek
+                    inspiration. My portfolio showcases my journey.
                   </p>
-                  <p>
-                    You can customize a template or make your own from scratch,
-                    with an immersive library at your disposal.
-                  </p>
+                  <p>Let&apos;s connect and create together! Cheers, Jay.</p>
                 </div>
                 <div className="orido_tm_boxed_button">
-                  <a href="#">
-                    {/* download resume here  */}
+                  <a href="/img/cv/jay-maniya.pdf" download>
                     My Resume{" "}
                     <Image
                       width={100}
@@ -198,11 +171,12 @@ const ExpertAreas: React.FC = () => {
                               <span className="icon">
                                 <span className="in">
                                   <Image
-                                    width={24}
-                                    height={24}
+                                    width={100}
+                                    height={100}
                                     className="svg"
                                     src={skill.icon}
                                     alt=""
+                                    style={{ width: 50 }}
                                   />
                                 </span>
                               </span>

@@ -4,8 +4,11 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { projectSliderProps } from "../utils/sliderProps";
 import { dataImage } from "@/app/utils/utils";
-import DetailsPopup from "./popup/DetailsPopup";
+import DetailsPopup, { ProjectDataType } from "./popup/DetailsPopup";
 import Image from "next/image";
+
+// Projects data
+import projects from "@/data/Projects.json";
 
 const Projects: React.FC = () => {
   useEffect(() => {
@@ -13,10 +16,22 @@ const Projects: React.FC = () => {
   }, []);
 
   const [detailsPopup, setDetailsPopup] = useState(false);
+  const [ProjectData, setProjectData] = useState<ProjectDataType | null>(null);
+
+  const handleDetailsPopup = (data: ProjectDataType) => {
+    setDetailsPopup(true);
+    setProjectData(data);
+  };
 
   return (
     <Fragment>
-      <DetailsPopup close={() => setDetailsPopup(false)} open={detailsPopup} />
+      {ProjectData ? (
+        <DetailsPopup
+          close={() => setDetailsPopup(false)}
+          open={detailsPopup}
+          ProjectData={ProjectData}
+        />
+      ) : null}
       <div className="orido_tm_section" id="portfolio">
         <div className="orido_tm_portfolio">
           <div className="container">
@@ -34,136 +49,34 @@ const Projects: React.FC = () => {
                 {...projectSliderProps}
                 className="owl-carousel gallery_zoom"
               >
-                <SwiperSlide>
-                  <div className="list_inner">
-                    <div className="image">
-                      <Image
-                        width={370}
-                        height={400}
-                        src="/img/thumbs/37-40.jpg"
-                        alt=""
-                      />
-                      <div
-                        className="main"
-                        data-img-url="/img/portfolio/1.jpg"
-                      />
-                    </div>
-                    <div className="details">
-                      <span className="category">Youtube</span>
-                      <h3 className="title">
-                        <span>Car Export</span>
-                      </h3>
-                    </div>
-                    <a
-                      className="orido_tm_full_link popup-youtube"
-                      href="https://www.youtube.com/watch?v=7e90gBu4pas"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="list_inner">
-                    <div className="image">
-                      <Image
-                        width={370}
-                        height={400}
-                        src="/img/thumbs/37-40.jpg"
-                        alt=""
-                      />
-                      <div
-                        className="main"
-                        data-img-url="/img/portfolio/2.jpg"
+                {projects.projects.map((project, index) => (
+                  <SwiperSlide key={index}>
+                    <div className="list_inner">
+                      <div className="image">
+                        <Image
+                          width={370}
+                          height={400}
+                          src={project.HeaderImage}
+                          alt=""
+                        />
+                        <div
+                          className="main"
+                          data-img-url={project.HeaderImage}
+                        />
+                      </div>
+                      <div className="details">
+                        <span className="category">{project.category}</span>
+                        <h3 className="title">
+                          <span>{project.name}</span>
+                        </h3>
+                      </div>
+                      <a
+                        className="orido_tm_full_link details_link c-pointer"
+                        onClick={() => handleDetailsPopup(project)}
                       />
                     </div>
-                    <div className="details">
-                      <span className="category">Vimeo</span>
-                      <h3 className="title">
-                        <span>Food delivery</span>
-                      </h3>
-                    </div>
-                    <a
-                      className="orido_tm_full_link popup-vimeo"
-                      href="https://vimeo.com/337293658"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="list_inner">
-                    <div className="image">
-                      <Image
-                        width={370}
-                        height={400}
-                        src="/img/thumbs/37-40.jpg"
-                        alt=""
-                      />
-                      <div
-                        className="main"
-                        data-img-url="/img/portfolio/3.jpg"
-                      />
-                    </div>
-                    <div className="details">
-                      <span className="category">Soundcloud</span>
-                      <h3 className="title">
-                        <span>Ecommerce Website</span>
-                      </h3>
-                    </div>
-                    <a
-                      className="orido_tm_full_link soundcloude_link mfp-iframe audio"
-                      href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="list_inner">
-                    <div className="image">
-                      <Image
-                        width={370}
-                        height={400}
-                        src="/img/thumbs/37-40.jpg"
-                        alt=""
-                      />
-                      <div
-                        className="main"
-                        data-img-url="/img/portfolio/4.jpg"
-                      />
-                    </div>
-                    <div className="details">
-                      <span className="category">Details</span>
-                      <h3 className="title">
-                        <span>Mockup Phone</span>
-                      </h3>
-                    </div>
-                    <a
-                      className="orido_tm_full_link details_link c-pointer"
-                      onClick={() => setDetailsPopup(true)}
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="list_inner">
-                    <div className="image">
-                      <Image
-                        width={370}
-                        height={400}
-                        src="/img/thumbs/37-40.jpg"
-                        alt=""
-                      />
-                      <div
-                        className="main"
-                        data-img-url="/img/portfolio/5.jpg"
-                      />
-                    </div>
-                    <div className="details">
-                      <span className="category">Popup</span>
-                      <h3 className="title">
-                        <span>Felix Photo</span>
-                      </h3>
-                    </div>
-                    <a
-                      className="orido_tm_full_link zoom"
-                      href="img/portfolio/5.jpg"
-                    />
-                  </div>
-                </SwiperSlide>
+                  </SwiperSlide>
+                ))}
               </Swiper>
               <a className="prev_button" href="#">
                 <Image

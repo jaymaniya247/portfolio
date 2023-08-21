@@ -46,8 +46,8 @@ const DarkClient = () => {
       <Services />
       <Projects />
       <Feedback dark={true} />
-      <Blog />
-      <Partners dark={true} />
+      {/* <Blog />
+      <Partners dark={true} /> */}
       <Contact />
       <CopyRight />
       <Mouse />

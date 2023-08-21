@@ -1,0 +1,84 @@
+{
+  "projects": [
+    {
+      "name": "Vongo: Ticket Booking Management System",
+      "HeaderImage": "/img/projects/vongo/page-1.png",
+      "images": [
+        "/img/projects/vongo/login.png",
+        "/img/projects/vongo/page-2.png",
+        "/img/projects/vongo/page-3.png"
+      ],
+      "description": [
+        "Developed a dynamic event ticket booking platform Named Vongo supporting 32 languages",
+        "Utilized technologies like Redux Toolkit, Next.js, Material-UI (Mui), Tailwind-Css for seamless user experiences.",
+        "Created custom sales pages and integrated them as Iframes for effective event promotion and ticket sales.",
+        "Tech Stack:- Node.js, Laravel, SQL, React.js(Next.js), MUI, TailwindCss, GitHub (Version Control)."
+      ],
+      "client": "Vijay Lathiya (Lathiya Solutions), Danny Bronstain (Miotix)",
+      "category": "Office",
+      "date": "(11/2022 - 10/2023)"
+    },
+    {
+      "name": "Assure-IT - Tickets Management System",
+      "HeaderImage": "/img/projects/assureIt/dashboard.png",
+      "images": null,
+      "description": [
+        "Assure-IT is a robust ticket management system addressing client issues seamlessly.",
+        "Users can conveniently submit tickets across multiple platforms, which are then stored and reviewed by site managers. this project streamlines issue resolution for enhanced user experience.",
+        "Tech Stack:- PHP, jQuery, JavaScript, HTML, and CSS"
+      ],
+      "client": "Vijay Lathiya (Lathiya Solutions), Danny Bronstain (Miotix)",
+      "category": "Office",
+      "date": ""
+    },
+    {
+      "name": "CodeHive - Your Personal Code Management System & ToDo Platform",
+      "HeaderImage": "/img/projects/codehive/page-1.png",
+      "images": [
+        "/img/projects/codehive/page-2.png",
+        "/img/projects/codehive/page-3.png",
+        "/img/projects/codehive/page-4.png"
+      ],
+      "description": [
+        "Store, organize and access your code snippets effortlessly, replacing text files.",
+        "The tailored dashboard, designed with Tailwind CSS, offers easy management of notes and tasks, functioning as a task manager.",
+        "Built with MERN stack, the site features user-specific dashboards, dark/light modes, and seamless registration-based login.",
+        "Tech Stack:- Node.js, Express.js, React.js(Next.js), MongoDb, Tailwind Css, GitHub (Version Control)"
+      ],
+      "client": "Self - Personal Project (Self-Learning)",
+      "category": "Self-Learning",
+      "date": "(06/2023 - 08/2023)"
+    },
+    {
+      "name": "Airbnb Clone",
+      "HeaderImage": "/img/projects/airbnb/main.png",
+      "images": [
+        "/img/projects/airbnb/page-1.png",
+        "/img/projects/airbnb/page-2.png",
+        "/img/projects/airbnb/page-3.png",
+        "/img/projects/airbnb/page-4.png"
+      ],
+      "description": [
+        "Airbnb Clone - A Next.js application replicating Airbnb's user interface and functionalities.",
+        "Developed through self-guided learning using YouTube resources, showcasing practical hands-on experience in web development.",
+        "Crafted with Next.js, Tailwind CSS, MongoDB, and Prisma. Features OAuth integration for GitHub and Google authentication."
+      ],
+      "client": "Self - Personal Project (Self-Learning)",
+      "category": "Self-Learning",
+      "date": "(05/2023 - 06/2023)"
+    },
+    {
+      "name": "ISCB (Indian Smuggling Control Bureau)",
+      "HeaderImage": "",
+      "images": null,
+      "description": [
+        "As part of my academic pursuits, I successfully completed a challenging and impactful project named ISCB (Indian Smuggling Control Bureau) that focused on developing a robust system to combat smuggling activities within our nation's borders.",
+        "The ISCB project not only allowed me to apply my technical skills in a real-world scenario but also provided a valuable opportunity to strengthen my collaboration and teamwork abilities. ",
+        "Tech Stack:- Node.js, Express.js, React.js, MongoDb, MUI, GitHub (Version Control)"
+      ],
+      "client": "College Project",
+      "category": "Personal",
+      "date": "(01/2023 - 04/2023)"
+    }
+  ]
+}

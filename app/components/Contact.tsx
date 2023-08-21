@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
               </p>
             </div>
             <div className="orido_tm_boxed_button">
-              <a href="#">
+              <a href="mailto:jaymaniya247@gmail.com">
                 Say Hello{" "}
                 <Image
                   height={24}
@@ -50,37 +50,32 @@ const Contact: React.FC = () => {
             </div>
             <div className="right">
               <div className="orido_tm_follow">
-                <span>Follow me:</span>
+                <span>Socials:</span>
                 <ul>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://github.com/jaymaniya247/jaymaniya247"
+                      target="_blank"
+                    >
                       <Image
-                        width={50}
-                        height={50}
+                        width={1000}
+                        height={1000}
                         className="svg"
-                        src="/img/svg/social/be.svg"
+                        src="/img/svg/github.svg"
                         alt=""
                       />
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://www.linkedin.com/in/jay-maniya-8a9913206/"
+                      target="_blank"
+                    >
                       <Image
-                        width={50}
-                        height={50}
+                        width={1000}
+                        height={1000}
                         className="svg"
-                        src="/img/svg/social/dribbble.svg"
-                        alt=""
-                      />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <Image
-                        width={50}
-                        height={50}
-                        className="svg"
-                        src="/img/svg/social/instagarm.svg"
+                        src="/img/svg/linkedin.svg"
                         alt=""
                       />
                     </a>

@@ -10,14 +10,14 @@ const Header: React.FC<HeaderProps> = ({ dark }) => {
     <div className="orido_tm_header">
       <div className="header_in">
         <div className="logo">
-          <a href="#">
+          {/* <a href="#">
             <Image
               width={159}
               height={48}
               src={`/img/logo/${dark ? "light" : "logo"}.png`}
               alt=""
             />
-          </a>
+          </a> */}
         </div>
         <div className="menu">
           <ul className="anchor_nav">
@@ -33,9 +33,9 @@ const Header: React.FC<HeaderProps> = ({ dark }) => {
             <li>
               <a href="#portfolio">Portfolio</a>
             </li>
-            <li>
+            {/* <li>
               <a href="#blog">Blog</a>
-            </li>
+            </li> */}
             <li>
               <a href="#contact">Contact</a>
             </li>

@@ -15,8 +15,6 @@ interface BlogPopupProps {
 }
 
 const BlogPopup: React.FC<BlogPopupProps> = ({ data, open, close }) => {
-  console.log(data);
-
   return (
     <Popup open={open} close={close}>
       <div className="news_popup_informations">
