@@ -31,6 +31,7 @@
 a {
   text-decoration: none;
 }
+
 :root {
   --main-color: #12141d;
   --font-family: "Inter", sans-serif;
@@ -38,11 +39,13 @@ a {
   --font-family-oswald: "Oswald", sans-serif;
   --font-family-kaushan: "Kaushan Script", cursive;
 }
+
 html {
   overflow-x: hidden;
   padding: 0px;
   margin: 0px;
 }
+
 body {
   overflow-x: hidden;
   width: 100%;
@@ -61,6 +64,7 @@ svg {
   width: 15px;
   height: 15px;
 }
+
 img.svg {
   width: 15px;
   height: 15px;
@@ -69,13 +73,16 @@ img.svg {
 body::-webkit-scrollbar {
   width: 11px;
 }
+
 body {
   scrollbar-width: thin;
   scrollbar-color: #999 #fff;
 }
+
 body:-webkit-scrollbar-track {
   background: #fff;
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: #999;
   border-radius: 6px;
@@ -86,20 +93,24 @@ body::-webkit-scrollbar-thumb {
   /* WebKit, Blink, Edge */
   color: var(--main-color);
 }
+
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: var(--main-color);
   opacity: 1;
 }
+
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: var(--main-color);
   opacity: 1;
 }
+
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--main-color);
 }
+
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: var(--main-color);
@@ -136,18 +147,23 @@ h6 {
 h1 {
   font-size: 45px;
 }
+
 h2 {
   font-size: 36px;
 }
+
 h3 {
   font-size: 30px;
 }
+
 h4 {
   font-size: 24px;
 }
+
 h5 {
   font-size: 20px;
 }
+
 h6 {
   font-size: 16px;
 }
@@ -159,11 +175,15 @@ h6 {
   float: left;
   position: relative;
 }
+
 .orido_tm_all_wrap,
 .orido_tm_all_wrap * {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box; /* Firefox, other Gecko */
-  box-sizing: border-box; /* Opera/IE 8+ */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 
 #preloader {
@@ -175,6 +195,7 @@ h6 {
   z-index: 99999;
   display: flex;
 }
+
 #preloader:before,
 #preloader:after {
   content: "";
@@ -189,10 +210,12 @@ h6 {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 #preloader:after {
   left: auto;
   right: 0;
 }
+
 #preloader .loader_line {
   margin: auto;
   width: 1px;
@@ -203,6 +226,7 @@ h6 {
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
 }
+
 .loader_line:before {
   content: "";
   position: absolute;
@@ -219,6 +243,7 @@ h6 {
   -o-animation: lineheight 1000ms ease-in-out 0s forwards;
   animation: lineheight 1000ms ease-in-out 0s forwards;
 }
+
 .loader_line:after {
   content: "";
   position: absolute;
@@ -241,6 +266,7 @@ h6 {
   0% {
     height: 0%;
   }
+
   100% {
     height: 100%;
   }
@@ -253,6 +279,7 @@ h6 {
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
   }
+
   100% {
     -webkit-transform: translateY(200%);
     -ms-transform: translateY(200%);
@@ -265,24 +292,29 @@ h6 {
 .preloaded .loader_line:after {
   opacity: 0;
 }
+
 .preloaded .loader_line {
   opacity: 0;
   height: 100% !important;
 }
+
 .preloaded:before,
 .preloaded:after {
   -webkit-animation: preloadedzero 300ms ease-in-out 500ms forwards;
   -o-animation: preloadedzero 300ms ease-in-out 500ms forwards;
   animation: preloadedzero 300ms ease-in-out 500ms forwards;
 }
+
 @keyframes preloadedzero {
   0% {
     width: 50%;
   }
+
   100% {
     width: 0%;
   }
 }
+
 .orido_tm_section {
   width: 100%;
   height: auto;
@@ -303,6 +335,7 @@ h6 {
   display: none;
   z-index: 10;
 }
+
 .orido_tm_mobile_menu .mobile_menu_inner {
   width: 100%;
   height: auto;
@@ -312,6 +345,7 @@ h6 {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 20px 10px 20px;
 }
+
 .orido_tm_mobile_menu .mobile_in {
   width: 100%;
   height: auto;
@@ -321,13 +355,16 @@ h6 {
   align-items: center;
   justify-content: space-between;
 }
+
 .orido_tm_mobile_menu .mobile_in .logo img {
   max-width: 90px;
   max-height: 70px;
 }
+
 .orido_tm_mobile_menu .trigger {
   line-height: 0;
 }
+
 .orido_tm_mobile_menu .dropdown {
   width: 100%;
   height: auto;
@@ -336,6 +373,7 @@ h6 {
   background-color: #fff;
   display: none;
 }
+
 .orido_tm_mobile_menu .dropdown .dropdown_inner {
   width: 100%;
   height: auto;
@@ -343,15 +381,18 @@ h6 {
   float: left;
   padding: 25px 20px;
 }
+
 .orido_tm_mobile_menu .dropdown .dropdown_inner ul {
   margin: 0px;
   list-style-type: none;
 }
+
 .orido_tm_mobile_menu .dropdown .dropdown_inner ul li {
   margin: 0px;
   float: left;
   width: 100%;
 }
+
 .orido_tm_mobile_menu .dropdown .dropdown_inner ul li a {
   text-decoration: none;
   color: #000;
@@ -359,24 +400,29 @@ h6 {
   padding: 0px 0px;
   font-weight: 500;
 }
+
 .orido_tm_mobile_menu .download_cv {
   padding-top: 20px;
 }
+
 .orido_tm_mobile_menu .download_cv a {
   color: #fff !important;
   border-radius: 50px;
   background-color: #f75023;
   padding: 7px 40px !important;
 }
+
 .orido_tm_mobile_menu .hamburger-inner,
 .orido_tm_mobile_menu .hamburger-inner:after,
 .orido_tm_mobile_menu .hamburger-inner:before {
   width: 30px;
   height: 2px;
 }
+
 .orido_tm_mobile_menu .hamburger-box {
   width: 30px;
 }
+
 .orido_tm_mobile_menu .hamburger {
   padding: 0px;
 }
@@ -399,39 +445,48 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_header.animate {
   padding: 15px 150px;
   background-color: #fff;
 }
+
 .orido_tm_header .header_in {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .orido_tm_header .logo img {
   max-width: 170px;
   max-height: 90px;
 }
+
 .orido_tm_header .menu {
   position: relative;
 }
+
 .orido_tm_header .menu ul {
   margin: 0px;
   list-style-type: none;
   display: flex;
   align-items: center;
 }
+
 .orido_tm_header .menu ul li {
   margin: 0px 50px 0px 0px;
 }
+
 .orido_tm_header .menu ul li:last-child {
   margin-right: 0px;
 }
+
 .orido_tm_header .menu ul li a {
   text-decoration: none;
   color: #5a5a5a;
 }
+
 .orido_tm_header .button a {
   text-decoration: none;
   color: var(--main-color);
@@ -448,10 +503,12 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_header .button a:hover {
   background-color: var(--main-color);
   color: #fff;
 }
+
 .orido_tm_header .menu .ccc {
   position: absolute;
   bottom: 2px;
@@ -477,9 +534,11 @@ h6 {
   position: relative;
   float: left;
 }
+
 .orido_tm_hero .container {
   min-height: 100vh;
 }
+
 .orido_tm_hero .content {
   min-height: 100vh;
   position: relative;
@@ -487,31 +546,37 @@ h6 {
   align-items: center;
   justify-content: space-between;
 }
+
 .orido_tm_hero .details {
   width: 50%;
   padding-right: 50px;
 }
+
 .orido_tm_hero .short {
   margin-bottom: 32px;
 }
+
 .orido_tm_hero .short h3 {
   font-size: 80px;
   font-weight: 500;
   letter-spacing: -4px;
   margin-bottom: 11px;
 }
+
 .orido_tm_hero .short h3 .svg {
   width: 45px;
   height: 45px;
   position: relative;
   left: -7px;
 }
+
 .orido_tm_hero .short .job {
   display: inline-block;
   position: relative;
   font-size: 24px;
   padding-left: 97px;
 }
+
 .orido_tm_hero .short .job:before {
   position: absolute;
   content: "";
@@ -521,26 +586,32 @@ h6 {
   left: 0px;
   top: 13px;
 }
+
 .orido_tm_hero .text {
   margin-bottom: 70px;
 }
+
 .orido_tm_hero .text p {
   font-size: 16px;
   color: #5a5a5a;
   line-height: 26px;
   max-width: 400px;
 }
+
 .orido_tm_hero .buttons {
   display: flex;
   align-items: center;
 }
+
 .orido_tm_boxed_button {
   width: 100%;
   float: left;
 }
+
 .orido_tm_hero .orido_tm_boxed_button {
   width: auto;
 }
+
 .orido_tm_boxed_button a {
   text-decoration: none;
   color: #fdfdfd;
@@ -559,6 +630,7 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_boxed_button a .svg {
   width: 24px;
   height: 24px;
@@ -572,23 +644,28 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_boxed_button a:hover {
   background-color: var(--main-color);
 }
+
 .orido_tm_simple_button {
   width: 100%;
   float: left;
 }
+
 .orido_tm_hero .orido_tm_simple_button {
   width: auto;
   margin-left: 64px;
 }
+
 .orido_tm_simple_button a {
   text-decoration: none;
   color: var(--main-color);
   font-family: var(--font-family-extra);
   font-weight: 700;
 }
+
 .orido_tm_simple_button a .svg {
   width: 24px;
   height: 24px;
@@ -596,10 +673,12 @@ h6 {
   top: 6px;
   margin-left: 6px;
 }
+
 .line_effect {
   display: inline-block;
   position: relative;
 }
+
 .line_effect:after {
   content: "";
   width: 0;
@@ -611,19 +690,23 @@ h6 {
   transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   background: currentColor;
 }
+
 .line_effect:hover:after {
   width: 100%;
   left: 0;
   right: auto;
 }
+
 .orido_tm_hero .orido_tm_follow {
   position: absolute;
   bottom: 120px;
 }
+
 .orido_tm_follow {
   display: flex;
   align-items: center;
 }
+
 .orido_tm_follow ul {
   margin: 0px;
   list-style-type: none;
@@ -633,12 +716,15 @@ h6 {
   top: 5px;
   margin-left: 20px;
 }
+
 .orido_tm_follow ul li {
   margin: 0px 20px 0px 0px;
 }
+
 .orido_tm_follow ul li:last-child {
   margin-right: 0px;
 }
+
 .orido_tm_follow ul li a {
   text-decoration: none;
   display: inline-block;
@@ -654,9 +740,11 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_follow ul li a:hover {
   background-color: var(--main-color);
 }
+
 .orido_tm_follow ul li .svg {
   position: absolute;
   top: 50%;
@@ -669,59 +757,73 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_follow ul li a:hover .svg path {
   fill: #fff;
 }
+
 .orido_tm_follow span {
   font-size: 16px;
   font-weight: 500;
 }
+
 .orido_tm_down {
   position: absolute;
   left: 150px;
   bottom: 45px;
 }
+
 .orido_tm_down svg {
   width: 36px !important;
   height: 36px !important;
 }
+
 .orido_tm_down svg #wheel {
   animation: scroll ease 2s infinite;
 }
+
 @keyframes scroll {
   0% {
     transform: translateY(0);
   }
+
   30% {
     transform: translateY(60px);
   }
 }
+
 .orido_tm_hero .avatar {
   position: absolute;
   width: 50%;
   right: 0px;
   bottom: 0px;
 }
+
 .orido_tm_hero .avatar .img {
   position: relative;
   display: inline-block;
 }
+
 .orido_tm_hero .avatar img {
   max-height: 760px;
   max-width: 700px;
 }
+
 .orido_tm_hero .video_button img {
   max-width: 200px !important;
   max-height: 200px !important;
 }
+
 .orido_tm_hero .video_button {
   position: absolute;
   bottom: 50px;
   right: -70px;
 }
+
 .orido_tm_hero .video_button a {
   position: relative;
 }
+
 .orido_tm_hero .video_button .svg {
   position: absolute;
   top: 50%;
@@ -732,6 +834,7 @@ h6 {
   margin-top: 2px;
   margin-left: 2px;
 }
+
 .anim_circle {
   animation: animCircle 15s infinite linear;
 }
@@ -740,6 +843,7 @@ h6 {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(-360deg);
   }
@@ -758,6 +862,7 @@ h6 {
   padding: 180px 0px 120px 0px;
   margin-bottom: 120px;
 }
+
 .orido_tm_about .about_in {
   width: 100%;
   height: auto;
@@ -766,10 +871,12 @@ h6 {
   display: flex;
   align-items: center;
 }
+
 .orido_tm_about .left {
   width: 50%;
   padding-right: 50px;
 }
+
 .orido_tm_about .left .box {
   background-color: #ffc448;
   display: inline-block;
@@ -777,6 +884,7 @@ h6 {
   padding-bottom: 85px;
   position: relative;
 }
+
 .orido_tm_about .left .year {
   font-family: var(--font-family-oswald);
   letter-spacing: -4px;
@@ -788,12 +896,14 @@ h6 {
   color: #6244c5;
   line-height: 1;
 }
+
 .orido_tm_about .experience {
   font-size: 24px;
   padding-left: 50px;
   margin-top: 6px;
   display: inline-block;
 }
+
 .orido_tm_about .name {
   font-size: 80px;
   color: #6244c5;
@@ -806,10 +916,12 @@ h6 {
   left: -20px;
   width: 300%;
 }
+
 .orido_tm_about .right {
   width: 50%;
   position: relative;
 }
+
 .orido_tm_about .element {
   position: absolute;
   top: 0px;
@@ -817,32 +929,40 @@ h6 {
   margin-right: 15px;
   margin-top: -20px;
 }
+
 .orido_tm_about .element .svg {
   width: 80px;
   height: 80px;
   color: transparent;
 }
+
 .orido_tm_main_title {
   width: 100%;
   float: left;
 }
+
 .orido_tm_about .orido_tm_main_title {
   margin-bottom: 30px;
 }
+
 .orido_tm_about .orido_tm_main_title h3 {
   color: #fff;
 }
+
 .orido_tm_about .orido_tm_main_title h3 span:before {
   background-color: #fff;
 }
+
 .orido_tm_main_title h3 {
   letter-spacing: -2px;
   font-size: 56px;
   font-weight: 700;
 }
+
 .orido_tm_main_title h3 span {
   position: relative;
 }
+
 .orido_tm_main_title h3 span:before {
   position: absolute;
   content: "";
@@ -853,36 +973,44 @@ h6 {
   margin-left: 15px;
   left: 100%;
 }
+
 .orido_tm_about .right .text {
   width: 100%;
   float: left;
   margin-bottom: 50px;
 }
+
 .orido_tm_about .right .text p {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 300;
   line-height: 32px;
 }
+
 .orido_tm_about .short {
   width: 100%;
   float: left;
   display: flex;
   align-items: center;
 }
+
 .orido_tm_about .orido_tm_boxed_button {
   width: auto;
 }
+
 .orido_tm_about .orido_tm_boxed_button a {
   color: var(--main-color);
   background-color: #fff;
 }
+
 .orido_tm_about .orido_tm_boxed_button a:hover {
   color: #fff;
   background-color: var(--main-color);
 }
+
 .orido_tm_about .orido_tm_boxed_button a:hover .svg path {
   fill: #fff;
 }
+
 .orido_tm_about .short img {
   max-width: 200px;
   max-height: 80px;
@@ -900,41 +1028,49 @@ h6 {
   float: left;
   margin-bottom: 125px;
 }
+
 .orido_tm_informations .informations_inner {
   width: 100%;
   height: auto;
   display: flex;
 }
+
 .orido_tm_informations .left {
   width: 50%;
   padding-right: 100px;
 }
+
 .orido_tm_informations .left .text {
   width: 100%;
   float: left;
   margin-top: 30px;
   margin-bottom: 40px;
 }
+
 .orido_tm_informations .left .text p {
   margin-bottom: 35px;
 }
+
 .orido_tm_informations .left .text p:last-child {
   margin-bottom: 0px;
 }
+
 .orido_tm_informations .right {
   width: 50%;
   position: relative;
   top: 33px;
 }
+
 .orido_tm_informations .right .filter {
   width: 100%;
   float: left;
   position: relative;
 }
+
 .orido_tm_informations .right .filter .ccc {
   top: -16px;
   bottom: -20px;
-  border: 1px solid var(--main-color);
+  /* border: 1px solid var(--main-color); */
   position: absolute;
   z-index: -1;
   border-radius: 16px;
@@ -945,17 +1081,21 @@ h6 {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .orido_tm_informations .right .filter ul {
   margin: 0px;
   list-style-type: none;
 }
+
 .orido_tm_informations .right .filter ul li {
   margin: 0px 70px 0px 0px;
   display: inline-block;
 }
+
 .orido_tm_informations .right .filter ul li:last-child {
   margin-right: 0px;
 }
+
 .orido_tm_informations .right .filter ul li a {
   text-decoration: none;
   color: var(--main-color);
@@ -964,6 +1104,7 @@ h6 {
   display: inline-block;
   position: relative;
 }
+
 .orido_tm_informations .right .filter ul li a .svg {
   width: 24px;
   height: 24px;
@@ -971,22 +1112,27 @@ h6 {
   top: 6px;
   margin-left: 6px;
 }
+
 .orido_tm_informations .right .filter ul li a span {
   position: relative;
   display: inline-block;
 }
+
 .orido_tm_informations .right .filter ul li a:hover:after {
   opacity: 1;
   visibility: visible;
 }
+
 .orido_tm_informations .right .filter ul li a.current:before {
   opacity: 1;
   visibility: visible;
 }
+
 .orido_tm_informations .right .content {
   width: 100%;
   float: left;
 }
+
 .orido_tm_informations .right .content .wrapper {
   width: 100%;
   height: auto;
@@ -994,6 +1140,7 @@ h6 {
   float: left;
   display: none;
 }
+
 .orido_tm_informations .right .content .wrapper.current {
   display: block;
   animation: slide-down 1s ease;
@@ -1003,6 +1150,7 @@ h6 {
   0% {
     -webkit-transform: translateX(10%);
   }
+
   100% {
     -webkit-transform: translateX(0);
   }
@@ -1022,16 +1170,19 @@ h6 {
   float: left;
   margin-top: 110px;
 }
+
 .orido_tm_informations .skillbox ul {
   margin: 0px 0px 0px -20px;
   list-style-type: none;
 }
+
 .orido_tm_informations .skillbox ul li {
   margin: 0px 0px 45px 0px;
   width: 33.3333%;
   float: left;
   padding-left: 20px;
 }
+
 .orido_tm_informations .skillbox ul li .list_inner {
   width: 100%;
   height: auto;
@@ -1039,6 +1190,7 @@ h6 {
   float: left;
   position: relative;
 }
+
 .orido_tm_informations .skillbox .icon {
   width: 40px;
   height: 40px;
@@ -1048,6 +1200,7 @@ h6 {
   position: relative;
   margin-bottom: 3px;
 }
+
 .orido_tm_informations .skillbox .icon .in {
   width: 25px;
   height: 25px;
@@ -1059,6 +1212,7 @@ h6 {
   background-color: #fff;
   border-radius: 6px;
 }
+
 .orido_tm_informations .skillbox .icon .svg {
   position: absolute;
   top: 50%;
@@ -1068,28 +1222,34 @@ h6 {
   width: 16px;
   height: 16px;
 }
+
 .orido_tm_informations .skillbox .name {
   font-family: var(--font-family-extra);
   color: #000;
 }
+
 .orido_tm_informations .skillbox .name span {
   font-weight: 700;
 }
+
 .orido_tm_informations .timelinebox {
   width: 100%;
   float: left;
   margin-top: 100px;
 }
+
 .orido_tm_informations .timelinebox ul {
   margin: 0px 0px 0px -20px;
   list-style-type: none;
 }
+
 .orido_tm_informations .timelinebox ul li {
   margin: 0px 0px 37px 0px;
   width: 50%;
   float: left;
   padding-left: 20px;
 }
+
 .orido_tm_informations .timelinebox ul li .list_inner {
   width: 100%;
   height: auto;
@@ -1097,27 +1257,33 @@ h6 {
   float: left;
   position: relative;
 }
+
 .orido_tm_informations .timelinebox .time {
   width: 100%;
   float: left;
   margin-bottom: 25px;
 }
+
 .orido_tm_informations .timelinebox .time .year {
   color: #6244c5;
   display: block;
   margin-bottom: 2px;
 }
+
 .orido_tm_informations .timelinebox .job {
   width: 100%;
   float: left;
 }
+
 .orido_tm_informations .timelinebox .job h3 {
   font-size: 21px;
 }
+
 .orido_tm_informations .timelinebox .job span {
   display: inline-block;
   position: relative;
 }
+
 .orido_tm_informations .timelinebox .job span:before {
   position: absolute;
   content: "";
@@ -1127,6 +1293,7 @@ h6 {
   top: -10px;
   left: 0px;
 }
+
 .orido_tm_informations .orido_tm_boxed_button a .svg path {
   fill: #fff;
 }
@@ -1142,16 +1309,19 @@ h6 {
   float: left;
   margin-bottom: 92px;
 }
+
 .orido_tm_counter .counter_list {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
+
 .orido_tm_counter .counter_list ul {
   margin: 0px 0px 0px -30px;
   list-style-type: none;
 }
+
 .orido_tm_counter .counter_list ul li {
   margin: 0px 0px 30px 0px;
   float: left;
@@ -1159,6 +1329,7 @@ h6 {
   width: 25%;
   text-align: center;
 }
+
 .orido_tm_counter .counter_list ul li .list_inner {
   width: 100%;
   height: auto;
@@ -1166,6 +1337,7 @@ h6 {
   float: left;
   position: relative;
 }
+
 .orido_tm_counter .counter_list ul li .list_inner:before {
   position: absolute;
   content: "";
@@ -1178,6 +1350,7 @@ h6 {
   margin-top: 6px;
   z-index: -1;
 }
+
 .orido_tm_counter .counter_list h3 {
   font-weight: 400;
   font-size: 64px;
@@ -1186,6 +1359,7 @@ h6 {
   position: relative;
   z-index: 2;
 }
+
 .orido_tm_counter .counter_list .title {
   position: relative;
   z-index: 2;
@@ -1203,6 +1377,7 @@ h6 {
   right: 0px;
   z-index: 5;
 }
+
 .orido_tm_service {
   width: 100%;
   height: auto;
@@ -1211,6 +1386,7 @@ h6 {
   padding: 120px 0px;
   background-color: #fafafb;
 }
+
 .orido_tm_service .service_list {
   width: 100%;
   height: auto;
@@ -1219,6 +1395,7 @@ h6 {
   margin-top: 100px;
   position: relative;
 }
+
 .orido_tm_service .ccc {
   top: 0px;
   bottom: 0px;
@@ -1234,20 +1411,24 @@ h6 {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
+
 .orido_tm_service .service_list ul {
   margin: 0px;
   list-style-type: none;
   position: relative;
   z-index: 2;
 }
+
 .orido_tm_service .service_list ul li {
   margin: 0px;
   border-bottom: 1px solid var(--main-color);
   position: relative;
 }
+
 .orido_tm_service .service_list ul li:first-child {
   border-top: 1px solid var(--main-color);
 }
+
 .orido_tm_service .service_list .list_inner {
   width: 100%;
   display: flex;
@@ -1259,10 +1440,12 @@ h6 {
   padding-left: 25px;
   padding-right: 35px;
 }
+
 .orido_tm_service .service_list .left {
   width: 40%;
   display: flex;
 }
+
 .orido_tm_service .service_list .number {
   display: inline-block;
   color: #6244c5;
@@ -1275,6 +1458,7 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_service .service_list .title {
   font-size: 30px;
   font-weight: 500;
@@ -1286,15 +1470,18 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_service .service_list .right {
   width: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .orido_tm_service .service_list .right .text {
   padding-right: 150px;
 }
+
 .orido_tm_service .service_list .right .text p {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -1302,6 +1489,7 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_service .service_list .right .svg {
   width: 25px;
   height: 25px;
@@ -1312,37 +1500,47 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_service .service_list .right .arrow {
   line-height: 1;
 }
+
 .orido_tm_service .service_list ul li:hover .number,
 .orido_tm_service .service_list ul li.current .number {
   color: #fff;
 }
+
 .orido_tm_service .service_list ul li:hover .title,
 .orido_tm_service .service_list ul li.current .title {
   color: #fff;
 }
+
 .orido_tm_service .service_list ul li:hover .right .text p,
 .orido_tm_service .service_list ul li.current .right .text p {
   color: #fff;
 }
+
 .orido_tm_service .service_list ul li:hover .right .svg path,
 .orido_tm_service .service_list ul li.current .right .svg path {
   fill: #fff;
 }
+
 .orido_tm_service .service_list ul li.mleave .number {
   color: #6244c5;
 }
+
 .orido_tm_service .service_list ul li.mleave .title {
   color: var(--main-color);
 }
+
 .orido_tm_service .service_list ul li.mleave .right .text p {
   color: var(--main-color);
 }
+
 .orido_tm_service .service_list ul li.mleave .right .svg path {
   fill: var(--main-color);
 }
+
 .orido_tm_modalbox {
   position: fixed;
   top: 0px;
@@ -1360,10 +1558,12 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_modalbox.opened {
   opacity: 1;
   visibility: visible;
 }
+
 .orido_tm_modalbox .box_inner {
   position: absolute;
   top: 70px;
@@ -1384,11 +1584,13 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_modalbox.opened .box_inner {
   opacity: 1;
   visibility: visible;
   margin-top: 0px;
 }
+
 .orido_tm_modalbox .close {
   position: fixed;
   left: 100%;
@@ -1396,6 +1598,7 @@ h6 {
   margin-left: 30px;
   z-index: 10;
 }
+
 .orido_tm_modalbox .close a {
   display: block;
   width: 40px;
@@ -1412,15 +1615,18 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_modalbox .close a:hover {
   border-radius: 100%;
 }
+
 .orido_tm_modalbox .close a i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .orido_tm_modalbox .description_wrap {
   position: relative;
   width: 100%;
@@ -1430,6 +1636,7 @@ h6 {
   padding: 50px;
   overflow-y: scroll;
 }
+
 .orido_tm_modalbox .description_wrap:before {
   position: fixed;
   content: "";
@@ -1440,6 +1647,7 @@ h6 {
   background-color: #fff;
   z-index: 2;
 }
+
 .orido_tm_modalbox .description_wrap:after {
   position: fixed;
   content: "";
@@ -1450,21 +1658,26 @@ h6 {
   background-color: #fff;
   z-index: 2;
 }
+
 .orido_tm_modalbox .description_wrap::-webkit-scrollbar {
   width: 11px;
 }
+
 .orido_tm_modalbox .description_wrap {
   scrollbar-width: thin;
   scrollbar-color: #999 #fff;
 }
+
 .orido_tm_modalbox .description_wrap:-webkit-scrollbar-track {
   background: #fff;
 }
+
 .orido_tm_modalbox .description_wrap::-webkit-scrollbar-thumb {
   background-color: #999;
   border-radius: 10px;
   border: 3px solid #fff;
 }
+
 .orido_tm_service .popup_service_image {
   opacity: 0;
   visibility: hidden;
@@ -1472,6 +1685,7 @@ h6 {
   position: absolute;
   z-index: -111;
 }
+
 .orido_tm_service .service_hidden_details {
   opacity: 0;
   visibility: hidden;
@@ -1479,23 +1693,27 @@ h6 {
   position: absolute;
   z-index: -111;
 }
+
 .orido_tm_modalbox .service_popup_informations {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
+
 .orido_tm_modalbox .service_popup_informations .image {
   width: 100%;
   float: left;
   position: relative;
   margin-bottom: 33px;
 }
+
 .orido_tm_modalbox .service_popup_informations .image img {
   position: relative;
   min-width: 100%;
   opacity: 0;
 }
+
 .orido_tm_modalbox .service_popup_informations .image .main {
   position: absolute;
   top: 0px;
@@ -1507,21 +1725,26 @@ h6 {
   background-position: center;
   border-radius: 12px;
 }
+
 .orido_tm_modalbox .service_popup_informations .main_title {
   width: 100%;
   float: left;
   margin-bottom: 25px;
 }
+
 .orido_tm_modalbox .service_popup_informations .main_title h3 {
   font-size: 30px;
 }
+
 .orido_tm_modalbox .service_popup_informations .descriptions {
   width: 100%;
   float: left;
 }
+
 .orido_tm_modalbox .service_popup_informations .descriptions p {
   margin-bottom: 15px;
 }
+
 .orido_tm_modalbox .service_popup_informations .descriptions p:last-child {
   margin-bottom: 0px;
 }
@@ -1538,6 +1761,7 @@ h6 {
   background-color: #ffc448;
   padding: 120px 0px 110px 0px;
 }
+
 .orido_tm_portfolio .portfolio_list {
   width: 100%;
   height: auto;
@@ -1546,23 +1770,28 @@ h6 {
   margin-top: 65px;
   position: relative;
 }
+
 .orido_tm_portfolio .portfolio_list ul {
   margin: 0px;
   list-style-type: none;
   position: relative;
 }
+
 .orido_tm_portfolio .portfolio_list ul li {
   margin: 0px;
 }
+
 .orido_tm_portfolio .portfolio_list .image {
   position: relative;
   overflow: hidden;
 }
+
 .orido_tm_portfolio .portfolio_list .image img {
   position: relative;
   opacity: 0;
   min-width: 100%;
 }
+
 .orido_tm_portfolio .portfolio_list .image .main {
   position: absolute;
   top: 0px;
@@ -1580,28 +1809,34 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_portfolio .portfolio_list ul li:hover .image .main {
   transform: scale(1.1) translateZ(0);
 }
+
 .orido_tm_portfolio .portfolio_list .details {
   width: 100%;
   float: left;
   margin-top: 30px;
 }
+
 .orido_tm_portfolio .portfolio_list .category {
   font-size: 20px;
   display: inline-block;
   margin-bottom: 13px;
 }
+
 .orido_tm_portfolio .portfolio_list .title {
   font-size: 32px;
   letter-spacing: -1px;
   font-weight: 500;
 }
+
 .orido_tm_portfolio .portfolio_list .title span {
   display: inline-block;
   position: relative;
 }
+
 .orido_tm_portfolio .portfolio_list .title span:before {
   position: absolute;
   content: "";
@@ -1617,9 +1852,11 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_portfolio .portfolio_list ul li:hover .title span:before {
   width: 0px;
 }
+
 .orido_tm_portfolio .prev_button,
 .orido_tm_portfolio .next_button {
   position: absolute;
@@ -1637,16 +1874,20 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_portfolio .prev_button:hover,
 .orido_tm_portfolio .next_button:hover {
   border: 1px solid rgba(18, 0, 0, 0.5);
 }
+
 .orido_tm_portfolio .prev_button {
   left: -130px;
 }
+
 .orido_tm_portfolio .next_button {
   right: -130px;
 }
+
 .orido_tm_portfolio .prev_button .svg,
 .orido_tm_portfolio .next_button .svg {
   position: absolute;
@@ -1662,18 +1903,23 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_portfolio .prev_button .svg {
   margin-left: -1px;
 }
+
 .orido_tm_portfolio .next_button .svg {
   margin-left: 1px;
 }
+
 .orido_tm_portfolio .prev_button:hover .svg {
   margin-left: -5px;
 }
+
 .orido_tm_portfolio .next_button:hover .svg {
   margin-left: 5px;
 }
+
 .orido_tm_portfolio .hidden_content {
   display: none;
   opacity: 0;
@@ -1681,22 +1927,26 @@ h6 {
   position: absolute;
   z-index: -11;
 }
+
 .orido_tm_modalbox .popup_details {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
+
 .orido_tm_modalbox .popup_details .top_image {
   position: relative;
   overflow: hidden;
   margin-bottom: 33px;
 }
+
 .orido_tm_modalbox .popup_details .top_image img {
   position: relative;
   min-width: 100%;
   opacity: 0;
 }
+
 .orido_tm_modalbox .popup_details .top_image .main {
   position: absolute;
   top: 0;
@@ -1708,22 +1958,27 @@ h6 {
   background-repeat: no-repeat;
   border-radius: 12px;
 }
+
 .orido_tm_modalbox .portfolio_main_title {
   width: 100%;
   float: left;
   margin-bottom: 25px;
 }
+
 .orido_tm_modalbox .portfolio_main_title span {
   display: inline-block;
   font-family: var(--font-family-extra);
 }
+
 .orido_tm_modalbox .portfolio_main_title span a {
   text-decoration: none;
   color: #6f6b80;
 }
+
 .orido_tm_modalbox .portfolio_main_title h3 {
   font-size: 30px;
 }
+
 .orido_tm_modalbox .main_details {
   width: 100%;
   height: auto;
@@ -1731,32 +1986,40 @@ h6 {
   display: flex;
   margin-bottom: 60px;
 }
+
 .orido_tm_modalbox .main_details .textbox {
   width: 70%;
   padding-right: 40px;
 }
+
 .orido_tm_modalbox .main_details .textbox p {
   margin-bottom: 15px;
 }
+
 .orido_tm_modalbox .main_details .textbox p:last-child {
   margin-bottom: 0px;
 }
+
 .orido_tm_modalbox .main_details .detailbox {
   width: 30%;
   padding-left: 40px;
 }
+
 .orido_tm_modalbox .main_details .detailbox > ul {
   margin: 0px;
   list-style-type: none;
 }
+
 .orido_tm_modalbox .main_details .detailbox > ul > li {
   margin: 0px 0px 10px 0px;
   width: 100%;
   float: left;
 }
+
 .orido_tm_modalbox .main_details .detailbox > ul > li:last-child {
   margin-bottom: 0px;
 }
+
 .orido_tm_modalbox .main_details .detailbox .first {
   font-weight: 500;
   font-size: 18px;
@@ -1764,32 +2027,39 @@ h6 {
   color: #000;
   font-family: var(--font-family-extra);
 }
+
 .orido_tm_modalbox .main_details .detailbox span {
   font-family: var(--font-family-extra);
 }
+
 .orido_tm_modalbox .main_details .detailbox span a {
   text-decoration: none;
   color: #7d7789;
 }
+
 .orido_tm_modalbox .additional_images {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
+
 .orido_tm_modalbox .additional_images ul {
   margin: 0px 0px 0px -30px;
   list-style-type: none;
 }
+
 .orido_tm_modalbox .additional_images ul li {
   margin: 0px 0px 30px 0px;
   float: left;
   width: 50%;
   padding-left: 30px;
 }
+
 .orido_tm_modalbox .additional_images ul li:nth-child(3n-2) {
   width: 100%;
 }
+
 .orido_tm_modalbox .additional_images ul li .list_inner {
   width: 100%;
   height: auto;
@@ -1797,13 +2067,16 @@ h6 {
   float: left;
   position: relative;
 }
+
 .orido_tm_modalbox .additional_images ul li .my_image {
   position: relative;
 }
+
 .orido_tm_modalbox .additional_images ul li .my_image img {
   opacity: 0;
   min-width: 100%;
 }
+
 .orido_tm_modalbox .additional_images ul li .my_image .main {
   position: absolute;
   top: 0px;
@@ -1828,6 +2101,7 @@ h6 {
   background-color: #fafafb;
   padding: 120px 0px;
 }
+
 .orido_tm_testimonials .testimonials_in {
   width: 100%;
   height: auto;
@@ -1836,38 +2110,46 @@ h6 {
   align-items: center;
   padding-top: 75px;
 }
+
 .orido_tm_testimonials img {
   max-height: 400px;
   max-width: 350px;
 }
+
 .orido_tm_testimonials .info {
   padding-left: 70px;
 }
+
 .orido_tm_testimonials .text {
   width: 100%;
   float: left;
   margin-bottom: 40px;
 }
+
 .orido_tm_testimonials .text p {
   font-size: 24px;
   font-weight: 500;
   line-height: 36px;
   font-family: var(--font-family-extra);
 }
+
 .orido_tm_testimonials .details {
   width: 100%;
   float: left;
   padding-left: 41px;
 }
+
 .orido_tm_testimonials .details .name {
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 7px;
 }
+
 .orido_tm_testimonials .details .name span {
   position: relative;
   display: inline-block;
 }
+
 .orido_tm_testimonials .details .name span:before {
   position: absolute;
   content: "";
@@ -1878,6 +2160,7 @@ h6 {
   transform: translateY(-50%);
   left: -41px;
 }
+
 .orido_tm_testimonials .details .job {
   font-size: 19px;
   color: #707070;
@@ -1894,6 +2177,7 @@ h6 {
   float: left;
   padding: 120px 0px 0px 0px;
 }
+
 .orido_tm_news .news_list {
   width: 100%;
   height: auto;
@@ -1901,16 +2185,19 @@ h6 {
   float: left;
   margin-top: 100px;
 }
+
 .orido_tm_news .news_list > ul {
   margin: 0px 0px 0px -30px;
   list-style-type: none;
 }
+
 .orido_tm_news .news_list > ul > li {
   margin: 0px 0px 30px 0px;
   float: left;
   padding-left: 30px;
   width: 50%;
 }
+
 .orido_tm_news .news_list > ul > li .list_inner {
   width: 100%;
   height: auto;
@@ -1922,33 +2209,40 @@ h6 {
   background-color: rgba(255, 246, 217, 0.4);
   padding: 20px 20px 20px 30px;
 }
+
 .orido_tm_news .news_list > ul > li .left {
   width: 50%;
   position: relative;
   z-index: 1;
   padding-right: 10px;
 }
+
 .orido_tm_news .metabox {
   width: 100%;
   float: left;
   margin-bottom: 10px;
 }
+
 .orido_tm_news .metabox ul {
   margin: 0px;
   list-style-type: none;
 }
+
 .orido_tm_news .metabox ul li {
   margin: 0px 15px 0px 0px;
   display: inline-block;
 }
+
 .orido_tm_news .metabox ul li:last-child {
   margin-right: 0px;
 }
+
 .orido_tm_news .metabox span {
   font-size: 16px;
   position: relative;
   padding-left: 10px;
 }
+
 .orido_tm_news .metabox span:before {
   position: absolute;
   content: "";
@@ -1960,6 +2254,7 @@ h6 {
   transform: translateY(-50%);
   left: 0px;
 }
+
 .orido_tm_news .metabox a {
   color: var(--main-color);
 
@@ -1969,17 +2264,21 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_news .metabox a:hover {
   color: #f26440;
 }
+
 .orido_tm_news .title {
   width: 100%;
   float: left;
   margin-bottom: 43px;
 }
+
 .orido_tm_news .title h3 {
   line-height: 0.9;
 }
+
 .orido_tm_news .title a {
   font-size: 20px;
   font-weight: 700;
@@ -1990,20 +2289,24 @@ h6 {
   background-size: 0% 1px;
   transition: background-size 0.5s;
 }
+
 .orido_tm_news .title a:hover {
   background-size: 100% 1px;
 }
+
 .orido_tm_news .news_list > ul > li .right {
   width: 50%;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
+
 .orido_tm_news .news_list > ul > li .right img {
   position: relative;
   opacity: 0;
   min-width: 100%;
 }
+
 .orido_tm_news .news_list > ul > li .right .main {
   position: absolute;
   top: 0px;
@@ -2021,19 +2324,23 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_news .news_list > ul > li .right:hover .main {
   transform: scale(1.1) translateZ(0);
 }
+
 .orido_tm_news .shape {
   position: absolute;
   top: 0px;
   right: 0px;
   bottom: 0px;
 }
+
 .orido_tm_news .shape .svg {
   width: 100%;
   height: 100%;
 }
+
 .orido_tm_news .news_hidden_details {
   display: none;
   opacity: 0;
@@ -2041,21 +2348,25 @@ h6 {
   position: absolute;
   z-index: -11;
 }
+
 .orido_tm_modalbox .news_popup_informations {
   width: 100%;
   height: auto;
   clear: both;
   float: left;
 }
+
 .orido_tm_modalbox .news_popup_informations .image {
   position: relative;
   margin-bottom: 32px;
 }
+
 .orido_tm_modalbox .news_popup_informations .image img {
   position: relative;
   opacity: 0;
   min-width: 100%;
 }
+
 .orido_tm_modalbox .news_popup_informations .image .main {
   position: absolute;
   top: 0px;
@@ -2067,37 +2378,46 @@ h6 {
   background-position: center;
   border-radius: 12px;
 }
+
 .orido_tm_modalbox .news_popup_informations .text {
   width: 100%;
   float: left;
 }
+
 .orido_tm_modalbox .news_popup_informations .text p {
   margin-bottom: 15px;
 }
+
 .orido_tm_modalbox .news_popup_informations .text p:last-child {
   margin-bottom: 0px;
 }
+
 .orido_tm_modalbox .metabox {
   width: 100%;
   float: left;
   margin-bottom: 7px;
 }
+
 .orido_tm_modalbox .metabox ul {
   margin: 0px;
   list-style-type: none;
 }
+
 .orido_tm_modalbox .metabox ul li {
   margin: 0px 15px 0px 0px;
   display: inline-block;
 }
+
 .orido_tm_modalbox .metabox ul li:last-child {
   margin-right: 0px;
 }
+
 .orido_tm_modalbox .metabox span {
   font-size: 16px;
   position: relative;
   padding-left: 10px;
 }
+
 .orido_tm_modalbox .metabox span:before {
   position: absolute;
   content: "";
@@ -2109,6 +2429,7 @@ h6 {
   transform: translateY(-50%);
   left: 0px;
 }
+
 .orido_tm_modalbox .metabox a {
   color: var(--main-color);
 
@@ -2118,9 +2439,11 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_modalbox .metabox a:hover {
   color: #f26440;
 }
+
 .orido_tm_modalbox .news_popup_informations .title h3 {
   font-size: 30px;
   margin-bottom: 25px;
@@ -2137,6 +2460,7 @@ h6 {
   float: left;
   padding: 40px 0px 110px 0px;
 }
+
 .orido_tm_partners .partners_list {
   width: 100%;
   height: auto;
@@ -2145,13 +2469,16 @@ h6 {
   margin-top: 35px;
   position: relative;
 }
+
 .orido_tm_partners .partners_list .swiper {
   margin: 0px;
   list-style-type: none;
 }
+
 .orido_tm_partners .partners_list .swiper .swiper-slide {
   margin: 0px;
 }
+
 .orido_tm_partners .partners_list .swiper .swiper-slide img {
   opacity: 0.5;
 
@@ -2161,6 +2488,7 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_partners .partners_list .swiper .swiper-slide:hover img {
   opacity: 1;
 }
@@ -2178,6 +2506,7 @@ h6 {
   padding: 135px 0px 120px 0px;
   position: relative;
 }
+
 .orido_tm_contact .infobox {
   width: 100%;
   float: left;
@@ -2186,16 +2515,20 @@ h6 {
   justify-content: space-between;
   margin-bottom: 116px;
 }
+
 .orido_tm_contact .infobox .video_button {
   position: relative;
 }
+
 .orido_tm_contact .infobox .video_button img {
   max-width: 172px;
   max-height: 172px;
 }
+
 .orido_tm_contact .infobox .video_button a {
   position: relative;
 }
+
 .orido_tm_contact .infobox .video_button .svg {
   position: absolute;
   top: 50%;
@@ -2206,12 +2539,15 @@ h6 {
   margin-top: 2px;
   margin-left: 2px;
 }
+
 .orido_tm_contact .infobox .video_button .svg path {
   fill: #000;
 }
+
 .orido_tm_contact .orido_tm_boxed_button {
   width: auto;
 }
+
 .orido_tm_contact .text h3 {
   font-weight: 700;
   font-size: 56px;
@@ -2219,37 +2555,45 @@ h6 {
   color: #fff;
   margin-bottom: 25px;
 }
+
 .orido_tm_contact .text {
   padding: 0px 115px;
 }
+
 .orido_tm_contact .text p {
   font-weight: 300;
   line-height: 32px;
   color: rgba(255, 255, 255, 0.7);
 }
+
 .orido_tm_contact .connect {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .orido_tm_contact .connect .left ul {
   margin: 0px;
   list-style-type: none;
 }
+
 .orido_tm_contact .connect .left ul li {
   margin: 0px 50px 0px 0px;
   display: inline-block;
 }
+
 .orido_tm_contact .connect .left ul li:last-child {
   margin-right: 0px;
 }
+
 .orido_tm_contact .connect .name {
   display: block;
   color: rgba(255, 255, 255, 0.5);
   font-size: 16px;
   margin-bottom: 10px;
 }
+
 .orido_tm_contact .connect p {
   display: block;
   color: #fff;
@@ -2257,49 +2601,62 @@ h6 {
   font-family: var(--font-family-extra);
   font-weight: 500;
 }
+
 .orido_tm_contact .connect p a {
   color: #fff;
 }
+
 .orido_tm_contact .connect .line_effect:after {
   bottom: -7px;
 }
+
 .orido_tm_contact .orido_tm_follow span {
   color: #fff;
 }
+
 .orido_tm_contact .orido_tm_follow ul li a {
   background-color: rgba(255, 255, 255, 0.15);
 }
+
 .orido_tm_contact .orido_tm_follow ul li a:hover {
   background-color: #fff;
 }
+
 .orido_tm_contact .orido_tm_follow ul li .svg path {
   fill: #fff;
 }
+
 .orido_tm_contact .orido_tm_follow ul li a:hover .svg path {
   fill: var(--main-color);
 }
+
 .orido_tm_contact .orido_tm_boxed_button a:hover {
   background-color: #fff;
   color: var(--main-color);
 }
+
 .orido_tm_contact .orido_tm_boxed_button a:hover .svg path {
   fill: var(--main-color);
 }
+
 .orido_tm_contact .element {
   position: absolute;
   bottom: -60px;
   left: 0px;
 }
+
 .orido_tm_contact .element .svg {
   width: 100%;
   height: 100%;
   color: transparent;
 }
+
 .orido_tm_contact .element2 {
   position: absolute;
   right: 200px;
   top: 150px;
 }
+
 .orido_tm_contact .element2 .svg {
   width: 100%;
   height: 100%;
@@ -2318,6 +2675,7 @@ h6 {
   background-color: #ffc448;
   padding: 25px 0px;
 }
+
 .orido_tm_copyright .copyright_inner {
   width: 100%;
   height: auto;
@@ -2326,15 +2684,18 @@ h6 {
   align-items: center;
   justify-content: space-between;
 }
+
 .orido_tm_copyright .logo img {
   max-width: 170px;
   max-height: 80px;
 }
+
 .orido_tm_copyright .copy p {
   color: var(--main-color);
   font-size: 16px;
   font-weight: 500;
 }
+
 .orido_tm_copyright .copy a {
   color: var(--main-color);
 }
@@ -2353,6 +2714,7 @@ h6 {
   transform: translateZ(0);
   visibility: hidden;
 }
+
 .cursor-inner {
   margin-left: -3px;
   margin-top: -3px;
@@ -2365,6 +2727,7 @@ h6 {
   transition: width 0.3s ease-in-out, height 0.3s ease-in-out,
     margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
+
 .cursor-inner.cursor-hover {
   margin-left: -40px;
   margin-top: -40px;
@@ -2373,6 +2736,7 @@ h6 {
   background-color: #6244c5;
   opacity: 0.3;
 }
+
 .cursor-outer {
   margin-left: -15px;
   margin-top: -15px;
@@ -2386,9 +2750,11 @@ h6 {
   -webkit-transition: all 0.08s ease-out;
   transition: all 0.08s ease-out;
 }
+
 .cursor-outer.cursor-hover {
   opacity: 0;
 }
+
 .orido_tm_all_wrap[data-magic-cursor="hide"] .mouse-cursor {
   display: none;
   opacity: 0;
@@ -2416,15 +2782,18 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .progressbar.animate {
   right: 25px;
 }
+
 .progressbar .line {
   position: absolute;
   width: 1px;
   height: auto;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
 .progressbar .text {
   position: absolute;
   bottom: 100px;
@@ -2435,6 +2804,7 @@ h6 {
   transform-origin: left;
   white-space: nowrap;
 }
+
 .progressbar a {
   text-decoration: none;
   color: #000;
@@ -2450,14 +2820,17 @@ h6 {
   width: 100%;
   text-align: center;
 }
+
 .orido_tm_intro .short_info img {
   margin-bottom: 25px;
   max-width: 250px;
 }
+
 .orido_tm_intro .short_info h3 {
   font-size: 20px;
   color: #767676;
 }
+
 .orido_tm_intro {
   width: 100%;
   height: 100vh;
@@ -2465,6 +2838,7 @@ h6 {
   float: left;
   position: relative;
 }
+
 .orido_tm_intro .demos {
   width: 100%;
   height: 100%;
@@ -2474,6 +2848,7 @@ h6 {
   text-align: center;
   position: relative;
 }
+
 .orido_tm_intro .left,
 .orido_tm_intro .right {
   width: 50%;
@@ -2483,10 +2858,13 @@ h6 {
   justify-content: center;
   position: relative;
 }
+
 .orido_tm_intro .demos img {
   max-width: 400px;
+  max-height: 200px;
   margin-bottom: 25px;
 }
+
 .orido_tm_intro .desc {
   position: relative;
   top: 0px;
@@ -2497,9 +2875,11 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
 .orido_tm_intro .desc h3 {
   font-size: 20px;
 }
+
 .orido_tm_intro .intro_line,
 .orido_tm_intro .intro_line_2,
 .orido_tm_intro .intro_line_3 {
@@ -2512,16 +2892,20 @@ h6 {
   z-index: -1;
   background-color: rgba(0, 0, 0, 0.06);
 }
+
 .orido_tm_intro .intro_line {
   left: 25%;
 }
+
 .orido_tm_intro .intro_line_2 {
   left: 50%;
   transform: translateY(-50%);
 }
+
 .orido_tm_intro .intro_line_3 {
   left: 75%;
 }
+
 .orido_tm_intro .intro_link {
   position: absolute;
   z-index: 2;
@@ -2530,12 +2914,15 @@ h6 {
   left: 0px;
   right: 0px;
 }
+
 .orido_tm_intro .left:hover .desc {
   top: -20px;
 }
+
 .orido_tm_intro .right:hover .desc {
   top: -20px;
 }
+
 .orido_tm_intro_fixed_price .pricing-info,
 .orido_tm_intro_fixed_price .anim {
   text-decoration: none;
@@ -2569,9 +2956,11 @@ h6 {
     transform: scale(0.1);
     opacity: 0;
   }
+
   50% {
     opacity: 0.3;
   }
+
   100% {
     -webkit-transform: scale(2);
     transform: scale(2);
@@ -2585,9 +2974,11 @@ h6 {
     transform: scale(0.1);
     opacity: 0;
   }
+
   50% {
     opacity: 0.3;
   }
+
   100% {
     -webkit-transform: scale(2);
     transform: scale(2);
@@ -2618,618 +3009,808 @@ h6 {
   body {
     font-size: 16px;
   }
+
   .container {
     max-width: 1130px;
     padding: 0px 30px;
   }
+
   .orido_tm_header {
     padding: 20px 60px;
   }
+
   .orido_tm_header.animate {
     padding: 10px 60px;
   }
+
   .orido_tm_header .menu ul li {
     margin-right: 45px;
   }
+
   .orido_tm_header .logo img {
     max-width: 145px;
     max-height: 80px;
   }
+
   .orido_tm_header .button a {
     padding: 9px 30px 10px 30px;
   }
+
   .orido_tm_hero .short {
     margin-bottom: 25px;
   }
+
   .orido_tm_hero .short h3 {
     font-size: 65px;
     margin-bottom: 7px;
   }
+
   .orido_tm_hero .short .job {
     font-size: 20px;
     padding-left: 87px;
   }
+
   .orido_tm_hero .short .job:before {
     width: 70px;
   }
+
   .orido_tm_hero .short h3 .svg {
     width: 38px;
     height: 38px;
   }
+
   .orido_tm_hero .text {
     margin-bottom: 45px;
   }
+
   .orido_tm_hero .text p {
     font-size: 15px;
   }
+
   .orido_tm_boxed_button a {
     padding: 15px 30px 16px 30px;
   }
+
   .orido_tm_hero .orido_tm_simple_button {
     margin-left: 45px;
   }
+
   .orido_tm_down {
     bottom: 15px;
     left: 60px;
   }
+
   .orido_tm_hero .orido_tm_follow {
     bottom: 60px;
   }
+
   .orido_tm_follow ul li a {
     width: 50px;
     height: 50px;
   }
+
   .orido_tm_follow ul li {
     margin-right: 10px;
   }
+
   .orido_tm_follow ul {
     margin-left: 10px;
   }
+
   .orido_tm_follow span {
     font-size: 15px;
   }
+
   .orido_tm_hero .avatar img {
     max-height: 530px;
     max-width: 500px;
   }
+
   .orido_tm_hero .video_button img {
     max-width: 150px !important;
     max-height: 150px !important;
   }
+
   .orido_tm_hero .video_button {
     bottom: 45px;
     right: -45px;
   }
+
   .orido_tm_about {
     padding-top: 160px;
   }
+
   .orido_tm_about .left .year {
     font-size: 330px;
     margin-top: -85px;
   }
+
   .orido_tm_about .experience {
     padding-left: 40px;
     font-size: 18px;
     margin-top: 3px;
   }
+
   .orido_tm_about .name {
     font-size: 55px;
     left: -10px;
     bottom: -20px;
   }
+
   .orido_tm_about .left .box {
     padding-bottom: 70px;
   }
+
   .orido_tm_about .about_in {
     max-width: 950px;
   }
+
   .orido_tm_about .orido_tm_main_title {
     margin-bottom: 25px;
   }
+
   .orido_tm_main_title h3 {
     font-size: 45px;
   }
+
   .orido_tm_main_title h3 span:before {
     width: 65px;
     margin-left: 10px;
   }
+
   .orido_tm_about .short img {
     max-width: 160px;
     margin-left: 40px;
   }
+
   .orido_tm_about .right .text {
     margin-bottom: 40px;
   }
+
   .orido_tm_informations .skillbox {
     margin-top: 85px;
   }
+
   .orido_tm_portfolio .prev_button,
   .orido_tm_portfolio .next_button {
     width: 65px;
     height: 65px;
     margin-top: -120px;
   }
+
   .orido_tm_portfolio .prev_button .svg,
   .orido_tm_portfolio .next_button .svg {
     width: 24px;
     height: 24px;
   }
+
   .orido_tm_portfolio .prev_button {
     left: -80px;
   }
+
   .orido_tm_portfolio .next_button {
     right: -80px;
   }
+
   .orido_tm_portfolio .portfolio_list .title {
     font-size: 28px;
   }
+
   .orido_tm_portfolio .portfolio_list .category {
     font-size: 18px;
     margin-bottom: 7px;
   }
+
   .orido_tm_portfolio .portfolio_list .details {
     margin-bottom: 22px;
   }
+
   .orido_tm_testimonials .text p {
     font-size: 22px;
     line-height: 34px;
   }
+
   .orido_tm_testimonials .details .name {
     font-size: 22px;
     margin-bottom: 5px;
   }
+
   .orido_tm_testimonials .details .job {
     font-size: 17px;
   }
+
   .orido_tm_news .metabox span {
     font-size: 14px;
   }
+
   .orido_tm_news .metabox ul li {
     margin-right: 5px;
   }
+
   .orido_tm_news .title a {
     font-size: 18px;
   }
+
   .orido_tm_news .title {
     margin-bottom: 35px;
   }
+
   .orido_tm_contact .text h3 {
     font-size: 48px;
     margin-bottom: 18px;
   }
+
   .orido_tm_contact .connect p {
     font-size: 25px;
   }
+
   .orido_tm_contact .orido_tm_follow ul li a {
     width: 50px;
     height: 50px;
   }
+
   .orido_tm_contact .orido_tm_follow ul li {
     margin-right: 10px;
   }
+
   .orido_tm_contact .orido_tm_follow ul {
     margin-left: 10px;
   }
+
   .orido_tm_contact .orido_tm_follow span {
     font-size: 15px;
   }
+
   .orido_tm_copyright .logo img {
     max-width: 145px;
     max-height: 80px;
   }
+
   .orido_tm_modalbox .box_inner {
     top: 50px;
     bottom: 50px;
     width: 800px;
   }
+
   .orido_tm_modalbox .close {
     margin-left: 20px;
   }
+
   .orido_tm_modalbox .description_wrap {
     padding: 40px;
   }
+
   .orido_tm_modalbox .description_wrap:before {
     height: 40px;
   }
+
   .orido_tm_modalbox .description_wrap:after {
     height: 40px;
   }
+
   .orido_tm_contact .element .svg {
     width: 80%;
     height: 80%;
   }
+
   .orido_tm_contact .element {
     left: -50px;
   }
+
   .orido_tm_contact .element2 {
     right: 40px;
   }
+
   .orido_tm_contact .element2 .svg {
     width: 70%;
     height: 70%;
   }
 }
+
 @media (max-width: 1200px) {
   .orido_tm_modalbox .box_inner {
     width: 500px;
     top: 70px;
     bottom: 70px;
   }
+
   .orido_tm_modalbox .description_wrap {
     padding: 35px;
   }
+
   .orido_tm_modalbox .portfolio_main_title {
     margin-bottom: 10px;
   }
+
   .orido_tm_modalbox .portfolio_main_title h3 {
     font-size: 22px;
     margin-bottom: 8px;
   }
+
   .orido_tm_modalbox .main_details {
     flex-direction: column;
   }
+
   .orido_tm_modalbox .main_details .textbox {
     width: 100%;
     padding-right: 0px;
     margin-bottom: 40px;
   }
+
   .orido_tm_modalbox .main_details .detailbox {
     padding-left: 0px;
     width: 100%;
   }
+
   .orido_tm_modalbox .additional_images ul {
     margin: 0px;
   }
+
   .orido_tm_modalbox .additional_images ul li {
     width: 100% !important;
     padding-left: 0px;
   }
+
   .orido_tm_modalbox .description_wrap:before {
     height: 35px;
   }
+
   .orido_tm_modalbox .description_wrap:after {
     height: 35px;
   }
+
   .orido_tm_modalbox .service_popup_informations .main_title h3 {
     font-size: 22px;
   }
+
   .orido_tm_modalbox .news_popup_informations .details h3 {
     font-size: 22px;
     margin-bottom: 8px;
   }
+
   .orido_tm_modalbox .news_popup_informations .image {
     margin-bottom: 27px;
   }
+
   .orido_tm_modalbox .news_popup_informations .details {
     margin-bottom: 15px;
   }
 }
+
 @media (max-width: 1040px) {
   body {
     font-size: 15px;
   }
+
   .mouse-cursor {
     display: none;
   }
+
   #preloader {
     display: none;
   }
+
   .container {
     padding: 0px 20px;
   }
+
   .orido_tm_header {
     display: none;
   }
+
   .orido_tm_mobile_menu {
     display: block;
   }
+
   .orido_tm_hero .avatar {
     display: none;
   }
+
   .orido_tm_hero .details {
     padding-right: 0px;
     width: 100%;
   }
+
   .orido_tm_hero .short h3 {
     font-size: 48px;
   }
+
   .orido_tm_hero .short h3 .svg {
     width: 25px;
     height: 25px;
     left: 0px;
   }
+
   .orido_tm_hero .short .job {
     font-size: 16px;
     padding-left: 60px;
   }
+
   .orido_tm_hero .short .job:before {
     width: 43px;
   }
+
   .orido_tm_boxed_button a {
     padding: 12px 25px 13px 25px;
   }
+
   .orido_tm_hero .orido_tm_simple_button {
     margin-left: 30px;
   }
+
   .orido_tm_simple_button a .svg {
     width: 20px;
     height: 20px;
     margin-left: 0px;
   }
+
   .orido_tm_hero .text {
     margin-bottom: 35px;
   }
+
   .orido_tm_follow ul li a {
     width: 40px;
     height: 40px;
   }
+
   .orido_tm_follow span {
     font-size: 14px;
   }
+
   .orido_tm_hero .orido_tm_follow {
     bottom: 100px;
   }
+
   .orido_tm_down {
     bottom: 10px;
     left: 20px;
   }
+
   .orido_tm_about .about_in {
     padding: 0px 20px;
   }
+
   .orido_tm_about .about_in {
     flex-direction: column;
   }
+
   .orido_tm_about .left {
     width: 100%;
     padding-right: 0px;
     margin-bottom: 40px;
   }
+
   .orido_tm_about .right {
     width: 100%;
   }
+
   .orido_tm_about .element {
     display: none;
   }
+
   .orido_tm_main_title h3 {
     font-size: 35px;
   }
+
   .orido_tm_main_title h3 span:before {
     width: 45px;
     bottom: 13px;
   }
+
   .orido_tm_about .left .year {
     font-size: 280px;
     margin-top: -75px;
   }
+
   .orido_tm_about .experience {
     font-size: 15px;
     padding-left: 35px;
   }
+
   .orido_tm_about .name {
     font-size: 47px;
     left: -12px;
     bottom: -16px;
   }
+
   .orido_tm_about .short img {
     max-width: 115px;
     margin-left: 25px;
   }
+
   .orido_tm_informations .informations_inner {
     flex-direction: column;
   }
+
   .orido_tm_informations .left {
     width: 100%;
     padding-right: 0px;
     margin-bottom: 50px;
   }
+
   .orido_tm_informations .right {
     width: 100%;
     top: 0px;
   }
+
   .orido_tm_informations .right .filter .ccc {
     display: none;
   }
+
   .orido_tm_informations .right .filter ul li {
     margin-bottom: 7px;
   }
+
   .orido_tm_informations .right .filter ul li a .svg {
     margin-left: 0px;
     width: 20px;
     height: 20px;
   }
+
   .orido_tm_informations .timelinebox {
     margin-top: 55px;
   }
+
   .orido_tm_informations .skillbox {
     margin-top: 50px;
   }
+
   .orido_tm_service .service_list .list_inner {
     flex-direction: column;
     align-items: baseline;
     justify-content: flex-start;
   }
+
   .orido_tm_service .service_list .right .arrow {
     display: none;
   }
+
   .orido_tm_service .service_list .left {
     width: 100%;
     margin-bottom: 10px;
   }
+
   .orido_tm_service .service_list .right {
     width: 100%;
     display: block;
   }
+
   .orido_tm_service .service_list .right .text {
     padding-right: 0px;
   }
+
   .orido_tm_service .service_list .title {
     font-size: 25px;
     padding-left: 10px;
   }
+
   .orido_tm_service .service_list .number {
     font-size: 16px;
   }
+
   .orido_tm_portfolio .prev_button,
   .orido_tm_portfolio .next_button {
     display: none;
   }
+
   .orido_tm_portfolio .portfolio_list .title {
     font-size: 25px;
   }
+
   .orido_tm_portfolio .portfolio_list .category {
     font-size: 15px;
   }
+
   .orido_tm_testimonials .testimonials_in {
     flex-direction: column;
     align-items: baseline;
   }
+
   .orido_tm_testimonials img {
     max-width: 250px;
     max-height: 250px;
     margin-bottom: 30px;
   }
+
   .orido_tm_testimonials .info {
     padding-left: 0px;
   }
+
   .orido_tm_testimonials .text p {
     font-size: 18px;
   }
+
   .orido_tm_testimonials .details .name {
     font-size: 20px;
     margin-bottom: 2px;
   }
+
   .orido_tm_testimonials .details .job {
     font-size: 15px;
   }
+
   .orido_tm_news .news_list > ul {
     margin: 0px;
   }
+
   .orido_tm_news .news_list > ul > li {
     width: 100%;
     padding-left: 0px;
   }
+
   .orido_tm_contact .infobox {
     flex-direction: column;
     align-items: baseline;
     justify-content: flex-start;
   }
+
   .orido_tm_contact .infobox .video_button img {
     max-width: 120px;
     max-height: 120px;
   }
+
   .orido_tm_contact .infobox .video_button .svg {
     width: 20px;
     height: 20px;
   }
+
   .orido_tm_contact .text {
     padding: 0px;
     margin-bottom: 20px;
   }
+
   .orido_tm_contact .text h3 {
     font-size: 32px;
     margin-bottom: 10px;
   }
+
   .orido_tm_contact .infobox .video_button {
     margin-bottom: 20px;
   }
+
   .orido_tm_contact .connect {
     flex-direction: column;
     align-items: baseline;
     justify-content: flex-start;
   }
+
   .orido_tm_contact .connect .left ul li {
     margin-bottom: 10px;
     margin-right: 20px;
   }
+
   .orido_tm_contact .connect p {
     font-size: 20px;
   }
+
   .orido_tm_contact .connect .left {
     margin-bottom: 20px;
   }
+
   .orido_tm_copyright .copyright_inner {
     flex-direction: column;
   }
+
   .orido_tm_copyright .logo {
     margin-bottom: 10px;
   }
+
   .orido_tm_copyright .logo img {
     max-width: 110px;
   }
+
   .orido_tm_modalbox .popup_details .top_image {
     margin-bottom: 27px;
   }
+
   .orido_tm_modalbox .service_popup_informations .image {
     margin-bottom: 27px;
   }
+
   .orido_tm_modalbox .service_popup_informations .main_title {
     margin-bottom: 13px;
   }
+
   .orido_tm_contact .element {
     display: none;
   }
+
   .orido_tm_contact .element2 {
     display: none;
   }
 }
+
 @media (max-width: 768px) {
+  .orido_tm_intro .demos {
+    width: 100%;
+    height: 100%;
+    clear: both;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .orido_tm_intro .demos img {
+    max-width: 300px;
+    max-height: 150px;
+    margin-bottom: 25px;
+  }
+
   .orido_tm_informations .skillbox ul li {
     width: 50%;
   }
+
   .orido_tm_informations .timelinebox ul {
     margin-left: 0px;
   }
+
   .orido_tm_informations .timelinebox ul li {
     width: 100%;
     padding-left: 0px;
   }
+
   .orido_tm_counter .counter_list ul li {
     width: 50%;
   }
+
   .orido_tm_counter .counter_list h3 {
     font-size: 45px;
   }
+
   .orido_tm_counter .counter_list ul li .list_inner:before {
     width: 45px;
     height: 45px;
   }
+
   .orido_tm_news .news_list > ul > li .list_inner {
     flex-direction: column-reverse;
     align-items: baseline;
   }
+
   .orido_tm_news .shape {
     display: none;
   }
+
   .orido_tm_news .news_list > ul > li .right {
     width: 100%;
     margin-bottom: 30px;
   }
+
   .orido_tm_news .news_list > ul > li .left {
     width: 100%;
     padding-right: 0px;
   }
+
   .orido_tm_news .news_list > ul > li .list_inner {
     padding: 20px;
   }
+
   .orido_tm_modalbox .box_inner {
     width: 300px;
   }
+
   .orido_tm_modalbox .close {
     left: auto;
     right: 0;
     margin-left: 0;
     top: -40px;
   }
+
   .orido_tm_modalbox .close a {
     width: 30px;
     height: 30px;
   }
+
   .orido_tm_modalbox .description_wrap {
     padding: 20px;
   }
+
   .orido_tm_modalbox .description_wrap:before {
     height: 20px;
   }
+
   .orido_tm_modalbox .description_wrap:after {
     height: 20px;
   }

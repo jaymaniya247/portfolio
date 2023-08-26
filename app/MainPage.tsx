@@ -8,7 +8,7 @@ const MainPage = () => {
     <div className="orido_tm_intro">
       <div className="short_info">
         {/* <Image width={159} height={49} src="/img/logo/logo.png" alt="" /> */}
-        <h3>Jay&apos;s React Nextjs Portfolio</h3>
+        {/* <h3>Jay&apos;s React Nextjs Portfolio</h3> */}
       </div>
       <span className="intro_line" />
       <span className="intro_line_2" />
@@ -21,9 +21,11 @@ const MainPage = () => {
               height={378}
               src="/img/light.png"
               alt=""
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", objectPosition: "left" }}
             />
-            <h3 className="title">Light</h3>
+            <h3 className="title" style={{ marginBottom: "10px" }}>
+              Light
+            </h3>
           </div>
           <Link
             className="intro_link"
@@ -39,9 +41,11 @@ const MainPage = () => {
               height={378}
               src="/img/dark.png"
               alt=""
-              style={{ objectFit: "cover" }}
+              style={{ objectFit: "cover", objectPosition: "left" }}
             />
-            <h3 className="title">Dark</h3>
+            <h3 className="title" style={{ marginBottom: "10px" }}>
+              Dark
+            </h3>
           </div>
           <Link
             className="intro_link"
